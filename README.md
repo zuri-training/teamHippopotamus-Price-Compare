@@ -21,7 +21,7 @@ If you do not have Node 18.12.1+, you can download it [here](https://nodejs.org/
 If you do not have NPM you can download it [here](https://www.npmjs.com/package/download)
 
 # How To Run Program
-- First open your terminal or cmd or git bash and and type `git clone https://github.com/zuri-training/teamHippopotamus-Price-Compare.git` then type <br>
+- First open your terminal or cmd or git bash and and type `git clone https://github.com/zuri-training/teamHippopotamus-Price-Compare.git` <br>then type 
 ```cd teamHippopotamus-Price-Compare```
 - Then install all requirements with npm or run the following command <br>
 ```npm install```
