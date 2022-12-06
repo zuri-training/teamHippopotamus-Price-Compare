@@ -108,12 +108,12 @@ main{
             border: 0px;
             padding: 10px 100px;
             text-decoration: none;
-            font-weight: bolder;
+            font-weight: bold;
         }
 
         label
         .fa-eye{
-        margin-left: -25px;
+        margin-left: -35px;
         
         }
 
