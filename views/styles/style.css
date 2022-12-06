@@ -5,79 +5,8 @@
 }
 
 img{
-    height:150px;
-    width: 180px;
-    /* margin-left: 50%; */
+    height:50px;
+    width: 100px;
+    
     
 }
-.Top-nav{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-}
-.Top-nav li{
- list-style-type: none; 
-   
-}
-
-li a{
-text-decoration: none;
-text-transform: uppercase;
-border-radius: 10px;
-}
-
-li a:hover{
-    color: crimson;
-    cursor: pointer;
-    padding: 5px 0px;
-border-radius: 10px;
-
-}
-
-h1,h3{
-padding: 10px;
-text-align: center;
-}
-.container{
-    border: 2px solid blue;
-    width: 80%;
-    padding: 20px;
-    margin: 10px 5px;
-    margin-left: 11%;
-}
-.container p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-
-}
-input{
-    width: 80%;
-    padding: 8px;
-    border-radius: 5px;
-    background-color: grey;
-    opacity: 0.8;
-    margin: 10px;
-}
-input:focus{
-    background-color: brown;
-    opacity: 0.7;
-}
-.container a:hover{
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-.submit button{
-    border-radius: 10px;
-    padding: 5px 20px;
-    margin: 10px;
-    text-decoration: none;
-    font-weight: bold;
-   
-}
-button:hover{
-    color: brown;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-

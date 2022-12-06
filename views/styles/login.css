@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    height:150px;
+    width: 180px;
+   
+    
+}
+
+header{
+display:flex;
+flex-direction: row;
+display: inline-block;
+background-color: rgb(255, 94, 0);
+margin-bottom: 0px;
+padding: 6px;
+width: 100%;
+border-radius: 5px;
+}
+
+.logo{
+    display: inline-block;
+    text-align: left;
+    flex: 50%;
+}
+
+.Top-nav{
+    margin-right: 80px;
+    margin-left: 2px;
+    text-align: right;
+    /* display: block; */
+    flex: 50%;
+    float:right;
+    
+}
+
+li a{
+   text-decoration: none; 
+}
+
+.Top-nav li{
+    display: inline-block;
+    margin: 15px;
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    list-style-type: none;
+
+}
+
+li a:hover{
+    color: white;
+    cursor: pointer;
+    padding: 5px 0px;
+border-radius: 10px;
+
+}
+
+main{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    }
+
+    h2,h3{
+    font-size: 25px;
+    
+    }
+    h2{
+        padding-top: 10px;
+        text-transform: uppercase;
+    }
+
+    label{
+        font-size: 18px;
+        
+        }
+
+        input{
+            width:100%;
+            padding: 8px;
+            border-radius: 5px;
+            background-color: rgb(171, 162, 162);
+            opacity: 0.8;
+            margin: 2px;
+            font-size: 18px;
+        }
+        input:focus{
+            background-color: brown;
+            opacity: 0.7;
+        }
+        .container p{
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .submit button{
+            width: 100%;
+            background-color: rgb(171, 162, 162);
+            opacity: 0.8;
+            border-radius: 10px;
+            border: 0px;
+            padding: 10px 100px;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        label
+        .fa-eye{
+        margin-left: -25px;
+        
+        }
+
+        .fa-eye:hover{
+            cursor: pointer;
+        }
+
+        .container a:hover{
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        button:hover{
+            color: brown;
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
+        @media only screen and (max-width: 600px){
+            header{
+                flex-direction: column;
+                background-color: rgb(246, 255, 127);
+            }
+        }
+            

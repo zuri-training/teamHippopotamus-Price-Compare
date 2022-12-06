@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   </head>
   <body>
     <header>
@@ -14,14 +15,14 @@
       </div>
 
       <nav class="Top-nav">
-        <li><a href="#Homepage">Homepage</a></li>
+        <li><a href="#Home_page">Homepage</a></li>
         <li><a href="#Category">Categories</a></li>
         <li><a href="#Contact">Contact Us</a></li>
       </nav>
     </header>
     <main>
-      <div class="Reg-Form">
-        <h1>Login here</h1>
+      <div class="Register">
+        <h2>Login here</h2>
         <h3>kindly enter your details to login</h3>
         <form action="post">
           <div class="container">
@@ -41,6 +42,7 @@
                 placeholder="input your password"
                 required
               />
+              <i class="far fa-eye" id="togglePassword"></i>
             </p>
             
 
@@ -56,7 +58,7 @@
             </div>
 
             <p>
-              Dont have a hippoCompares account?
+              Don't have a hippoCompares account?
               <a href="{% url 'register' %}">Create Account</a>
             </p>
           </div>
