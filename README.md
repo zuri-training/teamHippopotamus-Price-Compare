@@ -9,6 +9,7 @@ Team Hippopotamus is designing and implementing a platform for comparing the pri
 - <a href="https://github.com/zuri-training/teamHippopotamus-Price-Compare#How-To-Run-Program">How To Run Program</a>
 - <a href="https://github.com/zuri-training/teamHippopotamus-Price-Compare#About">About</a>
 - <a href="https://github.com/zuri-training/teamHippopotamus-Price-Compare#Features">Features</a>
+- <a href="https://github.com/zuri-training/teamHippopotamus-Price-Compare#Documentation-and-Data-Schema">Documentation and Data Schema</a>
 <!-- - <a href="https://github.com/zuri-training/teamHippopotamus-Price-Compare#Credit">Credits</a> -->
 
 # Introduction
@@ -44,3 +45,7 @@ Price-compare uses a webscraping script that traverses through the URLs of the L
 - Comment under product/price
 - Ability to share on social media and send by email
 - Link to the purchase page
+
+# Documentation and Data Schema
+
+Please check out project documenatation [here](https://docs.google.com/document/d/1EGwaGkTd9FgShY8GIJ8L9a6eCvozCa_juv77Hf9ZdS4/edit?usp=drivesdk) and Data schema [here](https://www.figma.com/file/VmR5Hk40Kxp7GsM4eiBGcw/Price-Comparison-Schema?node-id=1%3A15542&t=WJhsqBAAzVRBlk74-1)
