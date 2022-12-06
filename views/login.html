@@ -1,15 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    <h1>Login here</h1>
+    <link rel="stylesheet" href="styles/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo/hippoCompares.jpg" alt="HippoCompare logo" />
+      </div>
+
+      <nav class="Top-nav">
+        <li><a href="#Home_page">Homepage</a></li>
+        <li><a href="#Category">Categories</a></li>
+        <li><a href="#Contact">Contact Us</a></li>
+      </nav>
+    </header>
+    <main>
+      <div class="Register">
+        <h2>Login here</h2>
+        <h3>kindly enter your details to login</h3>
+        <form action="post">
+          <div class="container">
+            <p>
+              <label for="email">username</label><br />
+              <input
+                type="username"
+                placeholder="input your username"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="password">password</label><br />
+              <input
+                type="password"
+                placeholder="input your password"
+                required
+              />
+              <i class="far fa-eye" id="togglePassword"></i>
+            </p>
+
+            <p>
+              Forget password?
+              <a href="{% url 'password_rest' %}" class="alert-link"
+                >Reset password</a
+              >
+            </p>
+
+            <div class="submit">
+              <button type="submit">Log in</button>
+            </div>
+
+            <p>
+              Don't have a hippoCompares account?
+              <a href="{% url 'register' %}">Create Account</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </main>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
