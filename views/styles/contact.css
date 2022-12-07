@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: #0a07a7;
+}
+
+.splash-nav{
+    background-color: white;
+    position: relative;
+    left: 7%;
+    padding: 20px;
+    margin-top: 15px;
+    width: 85%;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#search{
+    height: 50px;
+    width: 500px;
+}
+.search-box {
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+ input{
+    height: 100%;
+     width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 0 15px;
+    margin: 2px;
+} 
+input:focus{
+    outline: none;
+}
+
+.search-box > i{
+    font-size: 20px;
+    padding: 0 10px;
+}
+.search-box button{
+    padding: 0 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.splash-nav > button{
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.splash-nav img{
+    position: absolute;
+    left: 20px;
+}
+.splash-nav .search-box{
+    position: absolute;
+    right: 15%;
+}
+.splash-nav .fa-user{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8% 
+}
+.splash-nav .fa-bars{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5% 
+}
+.contact-form h2{
+    position: absolute;
+    left: 7%;
+    top: 17%;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    font-stretch:extra-expanded;
+    color: #fb730a;
+}
+.name {
+    position: absolute;
+    left: 6%;
+    top: 25%;
+    background-color: white;
+    width: 35%;
+    height: 6vh;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+.name > i{
+    font-size: 20px;
+    padding: 0 10px;
+}
+ .name > input{
+    height: 100%;
+     width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 0 15px;
+    margin: 2px;
+} 
+.name:focus{
+    border: 2px solid black;
+}
+.contact-form #email{
+    position: absolute;
+    left: 6%;
+    top: 35%;
+    background-color: white;
+    width: 33.5%;
+    height: 6vh;
+    margin: 10px;
+    border-radius: 5px;
+}
+.contact-form #email:focus{
+    border: 2px solid black;
+}
+.contact-form #email:active{
+    border: none;
+    outline: none;
+}
+.contact-form #message{
+    position: absolute;
+    left: 6%;
+    top: 45%;
+    background-color: white;
+    width: 33.5%;
+    height: 25vh;
+    margin: 10px;
+    border-radius: 5px;
+}
+.contact-form #message:focus{
+    outline: none;
+    padding: 15px;
+    font-size: 16px;
+}
+.contact-form #message::placeholder{
+    font-size: 16px;
+    padding: 5px;
+}
+.contact-form button{
+    position: absolute;
+    bottom: 22%;
+    left: 23%;
+    padding: 3px 20px;
+    border-radius: 5px;
+    background-color: #fb730a;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.contact-form button:hover{
+    background-color: #fc9333;
+}
+.contact-form button:active{
+    background-color: #fdbe84;
+}
+
+.mpt{
+    position: absolute;
+    right: 5.7%;
+    top: 17%;
+    width: 40%;
+    height: 60%;
+    background-color: white;
+    border-radius: 5px;
+}

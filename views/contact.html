@@ -4,12 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/views/styles/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>Fill the form below to contact us</h1>
+    <div class="splash-nav">
+        <img src="/logo/hippo-compares.svg" alt="logo" aria-hidden="true" style="height: 60px;
+        width: 120px;">
+        <div class="search-box">
+         <input type="search" name="search" id="search" placeholder="Search for products and deals" >
+         <button><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        <button><i class="fa fa-user"></i></button>
+        <button><i class="fa fa-bars" aria-hidden="true"></i></button>
 
-    <script src="js/script.js"></script>
+    </div>
+
+    <div class="contact-form">
+        <h2><b>Contact us</b></h2>
+        <div class="name">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" name="name" id="name" placeholder="Name" >
+        </div>
+        <input type="email" name="email" id="email" placeholder="Email">
+        <textarea name="" id="message" cols="50" rows="10" placeholder="Enter your message here"></textarea>
+        <button type="submit">SEND</button>
+    </div>
+
+    <div class="mpt">
+
+    </div>
 </body>
 </html>

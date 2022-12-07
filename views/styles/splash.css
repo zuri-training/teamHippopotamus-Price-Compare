@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: #0a07a7;
+}
+
+.splash-nav{
+    background-color: white;
+    position: relative;
+    left: 7%;
+    padding: 20px;
+    margin-top: 15px;
+    width: 85%;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#search{
+    height: 50px;
+    width: 500px;
+}
+.search-box {
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+ input{
+    height: 100%;
+     width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 0 15px;
+    margin: 2px;
+} 
+input:focus{
+    outline: none;
+}
+
+.search-box > i{
+    font-size: 20px;
+    padding: 0 10px;
+}
+.search-box button{
+    padding: 0 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.splash-nav > button{
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.splash-nav img{
+    position: absolute;
+    left: 20px;
+}
+.splash-nav .search-box{
+    position: absolute;
+    right: 15%;
+}
+.splash-nav .fa-user{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8% 
+}
+.splash-nav .fa-bars{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5% 
+}
+.splash-btns{
+    position: absolute;
+    right: 105px
+}
+.splash-btns > button{
+    padding: 7px;
+    margin: 10px 15px;
+    width: 100px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.splash-btns #skip{
+    margin: 10px 0 10px 5px ;
+    border: none;
+}
+.splash-btns #skip:hover{
+    background-color: #dfdfdf;
+}
+.splash-btns #skip:active{
+    background-color: #afaeae;
+}
+.splash-btns #sign-in{
+    margin: 10px 5px;
+    background-color: #fb730a;
+    color: white;
+    border: none;
+}
+.splash-btns #sign-in:hover{
+    background-color: #fc9333;
+}
+.splash-btns #sign-in:active{
+    background-color: #fdbe84;
+}
+.motto{
+    position: absolute;
+    left: 7%;
+    margin-top: 5px;
+    font-weight: 700 ;
+    font-style: italic ;
+    font-size: 18px;
+    background: linear-gradient(to left, white, #fb730a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section{
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 60px;
+}
+
+.slider img{
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+}
+.st{
+    display: none;
+}
+.st-visible{
+    display: block;
+    animation: fadeAway 0.5s;
+}
+.st-btn{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    width: 50vw;
+    opacity: 0; 
+}
+.st-btn:hover{
+    opacity: 1;
+}
+.st-btn button{
+    border-radius: 50%;
+    border: 0;
+    font-weight: bolder;
+    font-size: large;
+    cursor: pointer;
+    width: 50px;
+    height: 50px; 
+}
+.st-btn #st-btn-prev{
+    margin-left: 10px;
+}
+.st-btn #st-btn-next{
+    margin-right: 10px;
+}
+@keyframes fadeAway {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: opacity linear;
+    };
+}
