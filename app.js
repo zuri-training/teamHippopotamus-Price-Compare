@@ -10,6 +10,10 @@ const shopRouter = require('./routes/shopRoute')
 // middlewares
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, "views")));
+app.use(express.static(path.join(__dirname, "logo")));
+
+
 
 //Routes Middleware
 // app.use('/admin')
