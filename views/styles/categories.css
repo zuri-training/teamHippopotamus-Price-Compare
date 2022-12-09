@@ -4,13 +4,14 @@
     --white: #FFFFFF; 
     --ash: #E6E6E6;
     --orange: #FB7E0A;
+    --darkorange: rgba(251, 126, 10, 0.4);
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif, 'poppins';
+    font-family: 'Lato', sans-serif,'Poppins';
 }
 
 body {
@@ -35,7 +36,7 @@ header {
     position: absolute;
     width: 124px;
     height: 59px;
-    background: url(../images/logo.png);
+    background: url(images/logo.png);
     margin-top: -1px;
 }
 
@@ -50,7 +51,7 @@ header {
 
 .icon1 {
     position: absolute;
-    background: url(../images/Icon1.png);
+    background: url(images/Icon1.png);
     height: 24px;
     width: 24px;
     margin-left: 349.5px;
@@ -69,7 +70,7 @@ header {
 
 .profile {
     position: absolute;
-    background: url(../images/Icon2.png);
+    background: url(images/Icon2.png);
     height: 48px;
     width: 48px;
     margin-left: 1196px;
@@ -78,7 +79,7 @@ header {
 
 .hamb {
     position: absolute;
-    background: url(../images/Icon3.png);
+    background: url(images/Icon3.png);
     margin-top: 4.5px;
     margin-left: 1252px;
     height: 48px;
@@ -130,7 +131,7 @@ li {
 /* Cart */
 .cart {
     position: absolute;
-    background: url(../images/Icon4.png);
+    background: url(images/Icon4.png);
     margin-top: 178px;
     margin-right: 94px;
     margin-left: 1370px;
@@ -170,50 +171,99 @@ li {
 footer {
     position: absolute;
     background: var(--white);
-    width: 1352px;
-    height: 253px;
-    margin-top: 1366px;
-    padding: 24px 24px 16px;
-    margin-left: 80px;
-}
-
-.logo2 {
-    position: absolute;
-    width: 124px;
-    height: 59px;
-    background: url(../images/logo.png);
-}
-
-.footer-navbar {
-    position: absolute;
-    order: 1;
-    margin-left: 294px;
-    /*margin-top: 206px;
-    margin-left: 85px;*/
-}
-
-.f-navbar {
-    list-style: none;
-    justify-content: center;
-}
-
-.f-navbar li {
-    display: inline-block;
-    margin-top: 99px;
-    /*padding: 0px 60px; */
-    margin-left: 60px;
-}
-
-.f-navbar li:nth-child(1) {
-    padding: 10px 10px 10px 10px;
-    margin-left: 0px;
-}
-
-.copyright {
-    margin-top: 173px;
+    width: 1440px;
+    height: 336px;
+    margin-top: 1283px;
+    /*padding: 24px 24px 16px;*/
+    margin-left: 36px;
 }
 
 .social-icons {
     position: absolute;
-    
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 50px;
+    height: 250px;
+    margin-left: 32px;
+}
+
+.social {
+    margin: 13px;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+}
+
+.footer-navbar-grid-container {
+    position: absolute;
+    /*background-color: red;*/
+    width: 615px;
+    height: 226px;
+    margin-top: 32px;
+    margin-left: 320px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 182px 130px 143px;
+    grid-template-rows: 30px 24px 24px 24px 24px 24px 24px;
+    grid-column-gap: 80px;
+    grid-row-gap: 8px;
+}
+
+.footer-grid {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--orange);
+}
+
+.footer-grid-item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.address {
+    width: 174px;
+    height: 152px;
+    margin-left: 1165px;
+    margin-top: 32px;
+    background-color: var(--darkorange);
+    padding: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.comments {
+    width: 164px;
+    height: 62px;
+    margin-left: 1170px;
+    margin-top: 24px;
+    background-color: var(--darkorange);
+    border-radius: 10px;
+    padding-left: 31.5px;
+    padding-top: 9px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21.78px;
+}
+
+.copyright {
+    position: absolute;
+    margin-top: 290px;
+    margin-left: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--orange);
 }
