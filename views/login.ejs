@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title><%= pageTitle %></title>
     <link rel="stylesheet" href="styles/login.css" />
     <link
       rel="stylesheet"
@@ -35,11 +35,11 @@
           </section>
           <div class="input-group">
             <i class="fas fa-envelope"></i>
-            <input type="text" placeholder="email" required />
+            <input type="text" name="email" placeholder="email" required />
           </div>
           <div class="input-group">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="password" required />
+            <input type="password" name="password" placeholder="password" required />
           </div>
           <div class="btg"><button class="btn-1" type="submit">LOGIN</button></div>
           <h4>Forget Password?</h4>
@@ -50,7 +50,7 @@
 
             </div>
             <div class="create">
-              <p><a class="acct" href="{% url 'register' %}">Create an account</a></p>
+              <p><a class="acct" href="/register">Create an account</a></p>
             </div>
           </div>
         </form>
@@ -62,7 +62,7 @@
             Sign-up and discover how you can compare <br> prices and enjoy a great
             amount and <br> new opportunities!
           </p>
-          <button class="sign-up" type="button">SIGN UP</button>
+          <button class="sign-up" type="button"><a href="/register">SIGN UP</a></button>
         </section>
       </div>
     </div>

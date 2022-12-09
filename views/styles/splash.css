@@ -93,6 +93,9 @@ input:focus{
     position: absolute;
     right: 105px
 }
+ button a {
+    text-decoration: none;
+}
 .splash-btns > button{
     padding: 7px;
     margin: 10px 15px;
@@ -189,4 +192,9 @@ input:focus{
         opacity: 1;
         transform: opacity linear;
     };
+}
+
+.not-found {
+    margin: 100px 70px;
+    color: #fb730a;
 }
