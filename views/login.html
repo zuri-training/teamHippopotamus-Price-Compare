@@ -8,65 +8,64 @@
     <link rel="stylesheet" href="styles/login.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lato:ital,wght@0,100;0,400;0,700;1,300;1,700&family=Lexend+Deca&family=Nunito:wght@200;300;400;500;600;700;800&family=Rubik:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/> -->
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="logo/hippoCompares.jpg" alt="HippoCompare logo" />
-      </div>
-
-      <nav class="Top-nav">
-        <li><a href="#Home_page">Homepage</a></li>
-        <li><a href="#Category">Categories</a></li>
-        <li><a href="#Contact">Contact Us</a></li>
-      </nav>
-    </header>
-    <main>
-      <div class="Register">
-        <h2>Login here</h2>
-        <h3>kindly enter your details to login</h3>
+    <div class="split-screen">
+      <div class="right">
         <form action="post">
-          <div class="container">
-            <p>
-              <label for="email">username</label><br />
-              <input
-                type="username"
-                placeholder="input your username"
-                required
-              />
-            </p>
-
-            <p>
-              <label for="password">password</label><br />
-              <input
-                type="password"
-                placeholder="input your password"
-                required
-              />
-              <i class="far fa-eye" id="togglePassword"></i>
-            </p>
-
-            <p>
-              Forget password?
-              <a href="{% url 'password_rest' %}" class="alert-link"
-                >Reset password</a
-              >
-            </p>
-
-            <div class="submit">
-              <button type="submit">Log in</button>
+          <section class="copy">
+            <h1>Login to your Account</h1>
+            <div class="login-container">
+              <p>Login using social networks</p>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a</i>
+              <p class="red">OR</p>
             </div>
+          </section>
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="text" placeholder="email" required />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="password" required />
+          </div>
+          <div class="btg"><button class="btn-1" type="button">LOGIN</button></div>
+          <h4>Forget Password?</h4>
 
-            <p>
-              Don't have a hippoCompares account?
-              <a href="{% url 'register' %}">Create Account</a>
-            </p>
+          <div class="no-account-container">
+            <div class="hippo">
+              <p>Don't have an account?</p>
+
+            </div>
+            <div class="create">
+              <p><a class="acct" href="{% url 'register' %}">Create an account</a></p>
+            </div>
           </div>
         </form>
       </div>
-    </main>
+      <div class="left">
+        <section class="copy">
+          <h2>New Here ?</h2>
+          <p id="pp">
+            Sign-up and discover how you can compare <br> prices and enjoy a great
+            amount and <br> new opportunities!
+          </p>
+          <button class="sign-up" type="button">SIGN UP</button>
+        </section>
+      </div>
+    </div>
 
     <script src="js/script.js"></script>
   </body>

@@ -1,139 +1,137 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  outline: none;
 }
 
-img{
-    height:150px;
-    width: 180px;
-   
-    
+body {
+  background-image: url ("./logo/hippoCompares.jpg");
 }
 
-header{
-display:flex;
-flex-direction: row;
-display: inline-block;
-background-color: rgb(255, 94, 0);
-margin-bottom: 0px;
-padding: 6px;
-width: 100%;
-border-radius: 5px;
+.split-screen {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo{
-    display: inline-block;
-    text-align:left;
-    flex: 50%;
+.right {
+  background-color: #5f5cfc;
+  min-height: 100vh;
+  width: 50%;
+}
+.left {
+  background-color: #fc9333;
+  min-height: 100vh;
+  width: 50%;
+}
+.copy {
+  margin-top: 70px;
+  text-align: center;
+}
+.copy h1 {
+  margin-bottom: 1px;
+  font-size: 60px;
 }
 
-.Top-nav{
-    margin-right: 80px;
-    margin-left: 2px;
-    text-align: right;
-    flex: 50%;
-    float:right;
-    
+.login-container p {
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.red {
+  margin-top: 10px;
+  color: black;
+  font-weight: bolder;
 }
 
-li a{
-   text-decoration: none; 
+input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border-style: solid;
+  border: 1px;
+}
+.input-group {
+  text-align: center;
+}
+.btn-1 {
+  width: 20%;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+  border-color: #fc9333;
+  border-radius: 5px;
+  background-color: #fc9333;
 }
 
-.Top-nav li{
-    display: inline-block;
-    margin: 15px;
-    padding-top: 50px;
-    font-weight: 500;
-    font-size: 18px;
-    list-style-type: none;
-
+.btn-1:hover {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btg {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-li a:hover{
-    color: white;
-    cursor: pointer;
-    padding: 5px 0px;
-border-radius: 10px;
-
+h4 {
+  margin-left: 33rem;
+  color: black;
+  margin-top: 40px;
 }
 
-main{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    }
+.no-account-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.hippo {
+  color: black;
+}
+.acct {
+  color: #fc9333;
+  border: 0px solid;
+  padding: 7px 20px;
+  text-decoration: none;
+  outline: none;
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: solid;
+}
+.login-container i {
+  color: #fff;
+  display: inline-block;
+  padding: 10px;
+  width: 8px;
+  height: 10px;
+}
+.left .copy {
+  margin-top: 150px;
+}
 
-    h2,h3{
-    font-size: 25px;
-    
-    }
-    h2{
-        padding-top: 10px;
-        text-transform: uppercase;
-    }
+h2 {
+  font-size: 50px;
+}
+.copy p {
+  margin-top: 40px;
+  font-size: 20px;
+}
+.sign-up {
+  margin-top: 40px;
+  padding: 6px 30px;
 
-    label{
-        font-size: 18px;
-        
-        }
+  text-align: center;
+  background-color: #5f5cfc;
+  color: #fff;
+  border-radius: 5px;
+  border: 0px;
+}
 
-        input{
-            width:100%;
-            padding: 8px;
-            border-radius: 5px;
-            background-color: rgb(171, 162, 162);
-            opacity: 0.8;
-            margin: 2px;
-            font-size: 18px;
-        }
-        input:focus{
-            background-color: brown;
-            opacity: 0.7;
-        }
-        .container p{
-            font-size: 20px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        .submit button{
-            width: 100%;
-            background-color: rgb(171, 162, 162);
-            opacity: 0.8;
-            border-radius: 10px;
-            border: 0px;
-            padding: 10px 100px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        label
-        .fa-eye{
-        margin-left: -35px;
-        
-        }
-
-        .fa-eye:hover{
-            cursor: pointer;
-        }
-
-        .container a:hover{
-            cursor: pointer;
-            border-radius: 10px;
-        }
-
-        button:hover{
-            color: brown;
-            transition: 0.3s ease;
-            cursor: pointer;
-        }
-        @media only screen and (max-width: 600px){
-            header{
-                flex-direction: column;
-                background-color: rgb(246, 255, 127);
-            }
-        }
-            
+#pp {
+  text-align: left;
+  margin-left: 205px;
+}
