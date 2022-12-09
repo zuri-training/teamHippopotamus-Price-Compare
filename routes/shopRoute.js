@@ -21,6 +21,8 @@ router.get('/terms', productCtrl.getTerms)
 // login page router
 router.post('/login', productCtrl.postLogin)
 
+router.get('/login', productCtrl.postLogin)
+
 // Sign Up page router
 router.get('/register', productCtrl.postSignUp)
 
