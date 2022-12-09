@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="styles/splash.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="splash-nav">
+        <img src="/hippo-compares.svg" alt="logo" aria-hidden="true" style="height: 60px;
+        width: 120px;">
+        <div class="search-box">
+         <input type="search" name="search" id="search" placeholder="Search for products and deals" >
+         <button><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        
+        <button><i class="fa fa-user"></i></button>
+        <button><i class="fa fa-bars" aria-hidden="true"></i></button>
+
+    </div>
+
+    <p class="motto">
+        <b>Making Choices Easier</b>
+    </p>
+
+    <div class="splash-btns">
+        <button id="sign-in"><a href="/login">SIGN-IN</a></button>
+        <button id="skip"><a href="/home">SKIP</a></button>
+    </div>
+
+    <section class="section">
+        <div class="slider">
+            <div class="slide">
+                <div class=" st st-visible first"><img src="images/img1.jpg" alt=""></div>
+                <div class="st"><img src="images/img2.jpeg" alt=""></div>
+                <div class="st"><img src="images/img3.jpeg" alt=""></div>
+                <div class="st"><img src="images/img4.jpeg" alt=""></div>
+                <div class="st-btn">
+                    <button id="st-btn-prev" aria-label="previous slide">&lArr;</button>
+                    <button id="st-btn-next" aria-label="next slide">&rArr;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/splash.js"></script>
+</body>
+</html>
