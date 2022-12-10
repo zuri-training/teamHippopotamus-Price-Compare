@@ -8,7 +8,18 @@ body{
     background-color: #5f5cfc;
     /* overflow-x: hidden; */
 }
-
+body .img{
+    filter: blur(3px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 25%;
+    left: 25%;
+    z-index: -1;
+    width: 50%;
+    height: 50%;
+    position: fixed;
+}
 .splash-nav{
     background-color: white;
     position: relative;
@@ -23,13 +34,18 @@ body{
     align-items: center;
     overflow: hidden;
 }
-
+.splash-nav h2{
+    font-size: 40px;
+    color: #fb730a;
+}
 #search{
     height: 50px;
-    width: 500px;
 }
 .search-box {
     background-color: white;
+    width: 50%;
+    margin-top: 7%;
+    margin-left: 25%;
     border-radius: 10px;
     border: 2px solid;
     display: flex;
@@ -77,10 +93,6 @@ input:focus{
     position: absolute;
     left: 20px;
 }
-.splash-nav .search-box{
-    position: absolute;
-    right: 15%;
-}
 .splash-nav .fa-user{
     position: absolute;
     top: 50%;
@@ -93,125 +105,73 @@ input:focus{
     transform: translateY(-50%);
     right: 5% 
 }
-.products .top-prod{
+.nav-select ul{
+    position: absolute;
+    left: 7%;
+    top: 20%;
     display: flex;
     flex-wrap: wrap;
-    /* gap: 1px; */
+    justify-content: space-between; 
+    align-items: center;
 }
-.products .top-prod > img{
-    /* position: absolute; */
-    width: 25vw;
-    height: 40vh;
-    margin-left: 6%;
-    margin-top: 5%;
-    border-radius: 10px;
+.nav-select ul li{
+    list-style: none;
+    margin-right: 100px;
 }
-.products .grid-prod{
+.nav-select ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+}
+.active{
+    border-bottom: 5px solid #fb730a;
+    width: 100%;
+    border-radius: 1px;
+    transition: 0.5s ease;
+}
+.nav-select li a:hover{
+    color: #fc9333;
+}
+.cart{
+    position: absolute;
+    right: 6%;
+    top: 20%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.cart .fa-shopping-cart{
+    color: #fb730a;
+    font-size: 40px;
+}
+.cart .fa-shopping-cart:hover{
+    border-radius: 50%;
+    background-color: #fdbe84;
+    padding: 15px;
+    color: white;
+}
+.cart .fa-shopping-cart:active{
+    border-radius: 50%;
+    background-color: #fb730a;
+    padding: 15px;
+    color: white;
+}
+.grid-prod{
     /* position: relative; */
     margin-top: 5%;
     display: grid;
-    grid-template-columns: 450px 450px 450px;
-    grid-template-rows: 300px 300px;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 350px 350px 350px;
     justify-content: center;
-    gap: 100px;
+    gap: 150px;
 }
-.products .grid-prod img{
+.grid-prod img{
     border-radius: 10px;
-}
-.products .grid-prod p{
-    margin: 5px;
-    font-style: 16px;
-    text-align: center;
-}
-.products .grid-prod button{
-    width: 50%;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 7px 30px;
-    border-radius: 5px;
-    background-color: #fb730a;
-    border: none;
-    cursor: pointer;
-}
-.products .grid-prod button:hover{
-    background-color: #fc9333
-}
-.products .grid-prod button:active{
-    background-color: #fdbe84
-}
-.products .grid-prod button i{
-    color: white;
-}
-.about-content{
-    width: 85%;
-    margin-left: 7%;
-    margin-right: 5%;
-    margin-top: 6%;
-    background-color: white;
-    padding: 40px 15px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25px;
-    border-radius: 10px;
-}
-.about-content .top-left{
-    width: 20%;
-}
-.about-content .top-right{
-    float: right;
-    width: 70%;
-    margin-top: -3.5%;
-}
-.about-content .bottom{
-    margin-top: 3%;
-}
-.subscribe{
-    margin: 50px 0;
-    margin-left: 7%;
-    /* width: 100%; */
-    align-items: center;
-    /* justify-content: center; */
-}
-.subscribe i{
-    color: white;
-    border-radius: 50%;
-    border: 2px black;
-    background-color: #fb730a;
-    padding: 30px;
-    font-size: 60px;
-}
-.subscribe p{
-    color: white;
-    margin-left: 9%;
-    margin-top: -6.2%;
-    font-weight: bolder;
-    font-size: 20px;
-}
-.subscribe p span{
-    color: #fb730a;
-    font-size: 40px;
-    font-weight: bolder;
-}
-.subscribe button{
-    margin-left: 2%;
-    background-color: #fb730a;
-    padding:8px 5px;
-    border-radius: 7px;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-.subscribe button:hover{
-    background-color: #fc9333
-}
-.subscribe button:active{
-    background-color: #fdbe84
 }
 /* Footer */
 footer {
     position: relative;
+    margin-top: 7%;
     bottom: 0;
     background: white;
     width: 85%;

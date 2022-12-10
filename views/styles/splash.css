@@ -61,7 +61,10 @@ input:focus{
     font-size: 20px;
     cursor: pointer;
 }
-
+.search-box button:hover,
+.search-box button:active{
+    color: #fb730a;
+}
 .splash-nav > button{
     font-size: 20px;
     cursor: pointer;
