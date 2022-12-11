@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <% if (isAuthenticated) { %>
     <div class="splash-nav">
         <img src="hippo-compares.svg" alt="logo" aria-hidden="true" style="height: 60px;
         width: 120px;">
@@ -137,5 +138,6 @@
     <button> Comments and Suggestions</button>
    
 </footer>
+<% } %>
 </body>
 </html>
