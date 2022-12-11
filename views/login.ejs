@@ -22,7 +22,7 @@
   <body>
     <div class="split-screen">
       <div class="right">
-        <form action="/" method="POST">
+        <form action="/login" method="POST">
           <section class="copy">
             <h1>Login to your Account</h1>
             <div class="login-container">
@@ -35,11 +35,11 @@
           </section>
           <div class="input-group">
             <i class="fas fa-envelope"></i>
-            <input type="text" name="email" placeholder="email" required />
+            <input type="text" name="email" placeholder="email" id="email" required />
           </div>
           <div class="input-group">
             <i class="fas fa-lock"></i>
-            <input type="password" name="password" placeholder="password" required />
+            <input type="password" name="password" id="password" placeholder="password" required />
           </div>
           <div class="btg"><button class="btn-1" type="submit">LOGIN</button></div>
           <h4>Forget Password?</h4>

@@ -6,6 +6,8 @@ const router = express.Router();
 
 
 
+
+
 // homepage router
 router.get("/", productCtrl.getIndex);
 
@@ -20,15 +22,12 @@ router.get('/accounts', productCtrl.getAccount)
 // terms page router
 router.get('/terms', productCtrl.getTerms)
 
-// login page router
-// router.post('/login', productCtrl.postLogin)
-
-router.get('/login', productCtrl.postLogin)
-
 // Sign Up page router
-router.get('/register', productCtrl.postSignUp)
+router.get('/register', productCtrl.getSignUp)
+
+// router.post('/register', productCtrl.postSignUp)
 
 // Contact page router
 router.get('/contact', productCtrl.postContact)
 
-module.exports = router;
+module.exports = router
