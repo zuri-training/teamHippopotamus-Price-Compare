@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: #5f5cfc;
+    /* overflow-x: hidden; */
+}
+
+.splash-nav{
+    background-color: white;
+    position: relative;
+    width: 85%;
+    height: 60px;
+    left: 7%;
+    padding: 20px;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#search{
+    height: 50px;
+    width: 500px;
+}
+.search-box {
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+ input{
+    height: 100%;
+     width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 0 15px;
+    margin: 2px;
+} 
+input:focus{
+    outline: none;
+}
+
+.search-box > i{
+    font-size: 20px;
+    padding: 0 10px;
+}
+.search-box button{
+    padding: 0 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.search-box button:hover,
+.search-box button:active{
+    color: #fb730a;
+}
+.splash-nav > button{
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.splash-nav img{
+    position: absolute;
+    left: 20px;
+}
+.splash-nav .search-box{
+    position: absolute;
+    right: 15%;
+}
+.splash-nav .fa-user{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8% 
+}
+.splash-nav .fa-bars{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5% 
+}
+.nav-select ul{
+    position: absolute;
+    left: 7%;
+    top: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+}
+.nav-select ul li{
+    list-style: none;
+    margin-right: 100px;
+}
+.nav-select ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+}
+.active{
+    border-bottom: 5px solid #fb730a;
+    width: 100%;
+    border-radius: 1px;
+    transition: 0.5s ease;
+}
+.nav-select li a:hover{
+    color: #fc9333;
+}
+.cart{
+    position: absolute;
+    right: 6%;
+    top: 20%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.cart .fa-shopping-cart{
+    color: #fb730a;
+    font-size: 40px;
+}
+.cart .fa-shopping-cart:hover{
+    border-radius: 50%;
+    background-color: #fdbe84;
+    padding: 15px;
+    color: white;
+}
+.cart .fa-shopping-cart:active{
+    border-radius: 50%;
+    background-color: #fb730a;
+    padding: 15px;
+    color: white;
+}
+.about-content{
+    position: relative;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+}
+.top-left h1{
+    text-align: center;
+    color:#aa6320;
+    margin: 20px;
+    font-size: 35px;
+    font-weight: bold;
+ }
+/* Footer */
+footer {
+    position: relative;
+    bottom: 0;
+    background: white;
+    width: 85%;
+    height: 250px;
+    padding: 24px 24px 16px;
+    margin-left: 7%;
+    border-radius: 10px 10px 0 0;
+}
+.footer-social-icons{
+    position: absolute;
+    top: 7%;
+    margin: 10px;
+    font-size: large;
+    cursor: pointer;
+}
+.footer-about{
+    position: absolute;
+    margin-left: 20%;
+    top: 7%;
+}
+.footer-catalog{
+    position: absolute;
+    margin-left: 40%;
+    top: 7%;
+}
+.footer-learn{
+    position: absolute;
+    margin-left: 60%;
+    top: 7%;
+
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: black;
+    text-align: justify;
+}
+footer ul li a:hover{
+    color: #fc9333;
+}
+footer ul li a:active{
+    color: #fb730a;
+}
+ul li{
+    margin: 10px;
+}
+footer span{
+    color: #fb730a;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;   
+}
+footer .copyright{
+    position: absolute;
+    bottom: 5%;
+    color: #fdbe84;
+}
+.footer-contact-us{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 6%;
+    font-size: small;
+    padding: 10px;
+    background-color: #fdbe84;
+    border-radius: 5px;
+}
+footer button{
+    position: absolute;
+    top: 65%;
+    right: 10%;
+    width: 7%;
+    line-height: 15px;
+    font-size: smaller;
+    padding: 5px 8px;
+    background-color: #fdbe84;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer button:hover{
+    background-color: #fc9333
+}
+footer button:active{
+    background-color: #fdbe84
+}
