@@ -17,9 +17,20 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.go-back{
+  float: left;
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  font-size: 30px;
+  cursor: pointer;
+}
+.go-back a{
+  text-decoration: none;
+  color: black;
+}
 .right {
-  background-color: #5f5cfc;
+  background-color: white;
   min-height: 100vh;
   width: 50%;
 }
@@ -35,6 +46,7 @@ body {
 .copy h1 {
   margin-bottom: 1px;
   font-size: 60px;
+  color: #5f5cfc;
 }
 
 .login-container p {
