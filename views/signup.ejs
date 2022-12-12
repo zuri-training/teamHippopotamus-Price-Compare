@@ -5,32 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= pageTitle %></title>
-   <link rel="stylesheet" href="styles/registration.css">
-   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/registration.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
   <body>
-        <div class="space">
-            <h1>Sign Up.</h1>
-            <form action="/register" method="POST">
-                <input type="text" name="firstname" id="firstname" placeholder="First name" required>
-                <input type="text" name="lastname" id="lastname" placeholder="Last name" required>
-                <input type="tel" name="number" id="number" placeholder="Phone Number" >
-                <input type="email" name="email" id="email" placeholder="Email" required>
-                <div></div>
-               <div>
-                <input type="password" name="password" id="password" placeholder="password" required >
-               </div>
-               <div>
-                <button type="submit" >Sign Up</button>
-               </div>
-               <Div class="member">Already a member? <a href="/login">Login Here</a> 
-
-               </Div>
-                
-
-            </form>
+    <div class="space">
+      <h1>Sign Up.</h1>
+      <form action="/register" method="POST">
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder="First name"
+          required
+        />
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          placeholder="Last name"
+          required
+        />
+        <input
+          type="tel"
+          name="number"
+          id="number"
+          placeholder="Phone Number"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+        <div></div>
+        <div>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
+            required
+          />
         </div>
-      </body>
+        <div>
+          <button type="submit">Sign Up</button>
+        </div>
+        <Div class="member"
+          >Already a member? <a href="/login">Login Here</a>
+        </Div>
+      </form>
+    </div>
+  </body>
 </html>

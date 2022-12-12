@@ -17,7 +17,7 @@ body {
 
     background-color: var(--purple);
     width: 1512px;
-    height: 1800px;
+    height: 2916px;
 }
 
 /* Header */
@@ -36,7 +36,7 @@ header {
     position: absolute;
     width: 124px;
     height: 59px;
-    background: url(images/logo.png);
+    background: url(../images/logos.png);
     margin-top: -1px;
 }
 
@@ -52,7 +52,7 @@ header {
 
 .icon1 {
     position: absolute;
-    background: url(images/Icon1.png);
+    background: url(../images/Icons1.png);
     height: 24px;
     width: 24px;
     margin-left: 349.5px;
@@ -71,7 +71,7 @@ header {
 
 .profile {
     position: absolute;
-    background: url(images/Icon2.png);
+    background: url(../images/Icons2.png);
     height: 48px;
     width: 48px;
     margin-left: 1196px;
@@ -80,7 +80,7 @@ header {
 
 .hamb {
     position: absolute;
-    background: url(images/Icon3.png);
+    background: url(../images/Icons3.png);
     margin-top: 4.5px;
     margin-left: 1252px;
     height: 48px;
@@ -132,7 +132,7 @@ li {
 /* Cart */
 .cart {
     position: absolute;
-    background: url(images/Icon4.png);
+    background: url(../images/Icons4.png);
     margin-top: 178px;
     margin-right: 94px;
     margin-left: 1370px;
@@ -140,32 +140,169 @@ li {
     width: 48px;
 }
 
-/* Categories Section */
-.sections-grid-container {
+/* Large Advert */
+.large-advert {
     position: absolute;
-    margin-top: 344px;
-    padding-top: 60px;
-    padding-left: 52px;
-    padding-right: 33px;
-    padding-bottom: 62px;
-    display: grid;
-    justify-content: center;
-    margin-left: 89px;
-    margin-right: 89px;
-    grid-template-columns: 339px 339px 339px;
-    grid-template-rows: 44px 44px 44px 44px 44px 44px 44px 44px;
-    grid-column-gap: 116px;
-    grid-row-gap: 60px;
+    background: url(../images/Icons11.jpg);
+    height: 365px;
+    width: 1352px;
+    margin-left: 78px;
+    margin-top: 313px;
+    border-radius: 8px;
+
 }
 
-.grid-item {
-    background-color: var(--white);
+/* Hot Sales Grid */
+.items-grid-container {
+    position: absolute;
+    margin-top: 822px;
+    margin-left: 149px;
+    padding-top: 0px;  
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 154px 154px 154px 154px 154px 154px;
+    grid-template-rows: 151px;
+    grid-column-gap: 61px;
+}
+
+.grid-item-1 {
+    background: url(../images/Icons12.png);
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.grid-item-2 {
+    background: url(../images/Icons13.png);
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.grid-item-3 {
+    background: url(../images/Icons14.png);
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.grid-item-4 {
+    background: url(../images/Icons15.png);
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.grid-item-5 {
+    background: url(../images/Icons16.png);
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.grid-item-6 {
+    background: url(../images/Icons17.png);
+    padding: 0px;
+    border-radius: 8px;
+}
+
+/* Popular Searches */
+h1 {
+    position: absolute;
+    height: 44px;
+    width: 440px;
+    margin-left: 85px;
+    margin-top: 1033px;
+    border-radius: 0px;
     padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    grid-column: span 1;
-    grid-row: span 1;
-    color: var(--orange);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.popular-searches-grid-container {
+    position: absolute;
+    width: 1340px;
+    height: 1095px;
+    margin-top: 1125px;
+    margin-left: 82px;
+    padding-top: 0px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 370px 370px 370px;
+    grid-template-rows: 538px 538px;
+    grid-column-gap: 115px;
+    grid-row-gap: 19px;
+}
+
+/* .ps-grid-item {
+   background-color: white;
+} */
+
+.grid-img {
+    width: 370px;
+    height: 300px;
+}
+
+h5 {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 10px;
+}
+
+.compare-prize {
+    margin-top: 22px;
+    height: 40px;
+    width: 266.5px;
+    margin-left: 51.75px;
+    border-radius: 4px;
+    padding: 0px 16px 0px 16px;
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.add-to-cart {
+    margin-top: 22px;
+    height: 40px;
+    width: 266.5px;
+    margin-left: 51.75px;
+    border-radius: 4px;
+    padding: 8px 16px 8px 16px;
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.grid-img1 {
+    background: url(../images/Icons18.png);
+}
+
+.grid-img2 {
+    background: url(../images/Icons20.png);
+}
+
+.grid-img3 {
+    background: url(../images/Icons22.png);
+}
+
+.grid-img4 {
+    background: url(../images/Icons19.png);
+}
+
+.grid-img5 {
+    background: url(../images/Icons21.png);
+}
+
+.grid-img6 {
+    background: url(../images/Icons24.png);
 }
 
 /* Subscribe */
@@ -174,7 +311,7 @@ li {
     width: 1488px;
     height: 229px;
     margin-left: 12px;
-    margin-top: 1238px;
+    margin-top: 2351px;
 }
 
 .Icon10 {
@@ -220,14 +357,14 @@ h3 {
 
 
 /* Footer */
-footer {
+/*footer {
     position: absolute;
     background: var(--white);
     width: 1440px;
     height: 340px;
-    margin-top: 1460px;
+    margin-top: 2580px;
     /*padding: 24px 24px 16px;*/
-    margin-left: 36px;
+    /*margin-left: 36px;
 }
 
 .social-icons {
@@ -252,7 +389,7 @@ footer {
 .footer-navbar-grid-container {
     position: absolute;
     /*background-color: red;*/
-    width: 615px;
+    /*width: 615px;
     height: 226px;
     margin-top: 32px;
     margin-left: 320px;
@@ -318,6 +455,6 @@ footer {
     font-size: 16px;
     line-height: 24px;
     color: var(--orange);
-}
+}*/
 
 
