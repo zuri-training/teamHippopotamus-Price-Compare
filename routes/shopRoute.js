@@ -4,30 +4,27 @@ const productCtrl = require("../controllers/productController");
 
 const router = express.Router();
 
-
-
-
+const isAuth = require("../middlewares/is-auth");
 
 // homepage router
 router.get("/", productCtrl.getIndex);
 
-router.get('/home', productCtrl.getLandingPage)
+router.get("/home", productCtrl.getLandingPage);
+
+router.get("/authhome", isAuth, productCtrl.getAuthHomePage);
 
 // category page router
-router.get('/categories', productCtrl.getCategory)
+router.get("/categories", productCtrl.getCategory);
 
 // account page router
-router.get('/accounts', productCtrl.getAccount)
+router.get("/accounts", productCtrl.getAccount);
 
 // terms page router
-router.get('/terms', productCtrl.getTerms)
-
-// Sign Up page router
-router.get('/register', productCtrl.getSignUp)
+router.get("/terms", productCtrl.getTerms);
 
 // router.post('/register', productCtrl.postSignUp)
 
 // Contact page router
-router.get('/contact', productCtrl.postContact)
+router.get("/contact", productCtrl.postContact);
 
-module.exports = router
+module.exports = router;

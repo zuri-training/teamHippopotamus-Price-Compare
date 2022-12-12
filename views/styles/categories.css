@@ -174,6 +174,56 @@ input:focus{
     color: #fb730a;
 }
 
+/* Subscribe */
+.subscribe {
+    position: absolute;
+    width: 1488px;
+    height: 229px;
+    margin-left: 12px;
+    margin-top: 1238px;
+}
+
+.Icon10 {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 75px;
+    width: 150px;
+    height: 150px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--orange);
+    margin-top: 53px;
+    margin-left: 265.5px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 265.5px;
+    margin-top: 16px;
+    color: var(--white);
+}
+
+.subscribe-button {
+    position: absolute;
+    width: 83px;
+    height: 40px;
+    background-color: var(--orange);
+    margin-left: 1209px;
+    margin-top: 95px;
+    border-radius: 10px;
+    border: var(--orange);
+}
+
 /* Footer */
 footer {
     position: relative;
