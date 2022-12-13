@@ -159,28 +159,11 @@ input:focus{
     padding: 15px;
     color: white;
 }
-.about-content{
-    position: absolute;
-    margin-top: 15%;
-    margin-bottom: 2%;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    color: black;
-    font-size: 18px;
-    line-height: 30px;
-}
-.top-left h1{
-    text-align: center;
-    color:#fc9333;
-    margin: 20px;
-    font-size: 35px;
-    font-weight: bold;
- }
+
 /* Footer */
 footer {
     position: absolute;
     bottom: 0;
-    top: 140%;
     background: white;
     border: 2px solid black;
     border-bottom: 0;
@@ -189,7 +172,6 @@ footer {
     padding: 24px 24px 16px;
     margin-left: 7%;
     border-radius: 10px 10px 0 0;
-    margin-top: 15%;
     /* box-shadow: 10px 10px 10 10px black; */
 }
 .footer-social-icons{
