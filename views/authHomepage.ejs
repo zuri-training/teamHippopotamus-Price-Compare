@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title><%= pageTitle %></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles/Homepage.css">
-    </head>
-    <body>
-        <div class="screen-container">
-            <% if (isAuthenticated) { %>
-            <!--Header-->
-            <header>
-                <div class="logo1"></div> <!--the logo-->
-                <div class="search-field">
-                    <div class="icon1"></div><!--1st Icon-->
-                    <input class="search" type="text" placeholder="Search for products and deals">
-                </div> <!--an icon in an input-->
-                <div class="profile"></div> <!--profile-->
-                <div class="hamb"></div> <!--hamburger-->
-            </header>
-            <!--Nav Bar-->
-            <nav>
-                <ul class="navbar">
-                    <li>Home</li>
-                    <li>Deals</li>
-                    <li>Stores</li>
-                    <li>Categories</li>
-                    <li>Wishlist</li>
-                    <li class="wishlist">Terms</li>
-                </ul>
-            </nav>
 
-            <!--Cart-->
-            <div class="cart"></div> <!--cart icon-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        <%= pageTitle %>
+    </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/views/styles/Homepage.css">
+</head>
+
+<body>
+    <div class="screen-container">
+        <% if (isAuthenticated) { %>
+            <!-- Search and Nav-bar -->
+            <section>
+
+                <div class="splash-nav">
+                    <img src="/logo/hippo-compares.svg" alt="logo" aria-hidden="true" style="height: 60px;
+            width: 120px;">
+                    <div class="search-box">
+                        <input type="search" name="search" id="search" placeholder="Search for products and deals">
+                        <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+
+                    <button><i class="fa fa-user"></i></button>
+                    <button><i class="fa fa-bars" aria-hidden="true"></i></button>
+                </div>
+
+                <div class="nav-select" id="navSelect">
+                    <ul>
+                        <li><a class="btn active" href="#">Home
+                            </a></li>
+                        <li><a class="btn" href="#">Deals </a></li>
+                        <li><a class="btn" href="#">Stores</a></li>
+                        <li><a class="btn" href="/views/category.html">Categories</a></li>
+                        <li><a class="btn" href="#">Wishlist</a></li>
+                        <li><a class="btn" href="/views/contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div><button class="cart"><i class=" fa fa-shopping-cart" aria-hidden="true"></i></button></div>
+
+            </section>
 
             <!--Large Advert-->
             <div class="large-advert"></div>
@@ -62,19 +72,22 @@
                     <!--<img src="images/Icon23.png" alt="cart image" class="img1">-->
                     <!--<img src="images/Icon23.png" alt="cart image" class="img2">-->
                     <div class="grid-img grid-img2"></div>
-                    <h5>Alibaba Online Shopping T- winner Watch Male Montre Homme Custom Logo Luxury Automatic Skeleton Men Mechanical Wrist Watches</h5>
+                    <h5>Alibaba Online Shopping T- winner Watch Male Montre Homme Custom Logo Luxury Automatic Skeleton
+                        Men Mechanical Wrist Watches</h5>
                     <button class="compare-prize">compare prize</button>
                     <button class="add-to-cart">Add to cart</button>
                 </div>
                 <div class="ps-grid-item psgrid-item-3">
                     <div class="grid-img grid-img3"></div>
-                    <h5>alibaba online shop 2022 new design Luxury rhinestones women hand bag Evening Bags for Party Wedding</h5>
+                    <h5>alibaba online shop 2022 new design Luxury rhinestones women hand bag Evening Bags for Party
+                        Wedding</h5>
                     <button class="compare-prize">compare prize</button>
                     <button class="add-to-cart">Add to cart</button>
                 </div>
                 <div class="ps-grid-item psgrid-item-4">
                     <div class="grid-img grid-img4"></div>
-                    <h5>Bridesmaid Dresses Here, All Size, Fast Delivery, Up To 70% Off Today, Buy Now. Cheap Bridesmaid Dresses Online.</h5>
+                    <h5>Bridesmaid Dresses Here, All Size, Fast Delivery, Up To 70% Off Today, Buy Now. Cheap Bridesmaid
+                        Dresses Online.</h5>
                     <button class="compare-prize">compare prize</button>
                     <button class="add-to-cart">Add to cart</button>
                 </div>
@@ -91,16 +104,20 @@
                     <button class="add-to-cart">Add to cart</button>
                 </div>
             </div>
-            
+
             <!--Subscribe-->
             <div class="subscribe">
                 <button class="subscribe-button">Subscribe</button>
                 <div class="Icon10"><img src="images/Icons10.png" alt=""></div>
-                <div class="text"><h2>Subscribe to the monthly newsletter</h2> <h3>Get the latest  news and update on Hippocompares. You’ll be glad you did</h3></div>
-                
+                <div class="text">
+                    <h2>Subscribe to the monthly newsletter</h2>
+                    <h3>Get the latest news and update on Hippocompares. You’ll be glad you did</h3>
+                </div>
+
             </div>
 
-            <% } %>
-        </div>
-    </body>
+        <% } %>
+    </div>
+</body>
+
 </html>

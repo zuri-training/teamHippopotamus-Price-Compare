@@ -20,7 +20,7 @@ body {
 .go-back{
   float: left;
   position: absolute;
-  top: 5%;
+  top: 3%;
   left: 3%;
   font-size: 30px;
   cursor: pointer;
@@ -35,7 +35,7 @@ body {
   width: 50%;
 }
 .left {
-  background-color: #fc9333;
+  background-color: #fdbe84;
   min-height: 100vh;
   width: 50%;
 }
@@ -60,15 +60,47 @@ body {
 }
 
 input {
-  width: 80%;
+  /* width: 50%; */
+  height: 40px;
+  background-color: #ddd;
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 10px;
-  border-style: solid;
-  border: 1px;
+  border-style: none;
+  border: none;
+  padding: 20px;
+  width: 70%;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 6%;
 }
-.input-group {
+.input-group1, .input-group2{
+  font-size: 20px;
+  /* color: #ddd; */
+  background-color: #ddd;
+  border: 2px solid black;
+  padding: 0;
+  height: 40px;
+  margin: 30px;
+  width: 80%;
+  height: 50px;
   text-align: center;
+  border-radius: 10px;
+  /* justify-content: center; */
+  align-items: center;
+  margin-left: 10%;
+  position: relative;
+}
+.input-group1 .fa-envelope,
+.input-group2 .fa-lock{
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  transform: translateY(-50%);
+  padding-left: 15px;
 }
 .btn-1 {
   width: 20%;
@@ -85,16 +117,20 @@ input {
   transition: all 0.2s ease;
 }
 .btg {
+  margin-top: 40px;
   text-align: center;
   margin-bottom: 50px;
 }
 
 h4 {
-  margin-left: 33rem;
+  margin-left: 42rem;
   color: black;
-  margin-top: 40px;
+  margin-top: 20px;
+  text-decoration: none;
 }
-
+h4 a{
+  text-decoration: none;
+}
 .no-account-container {
   display: flex;
   justify-content: space-around;

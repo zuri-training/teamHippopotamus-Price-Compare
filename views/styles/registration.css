@@ -5,16 +5,29 @@
     font-family: 'Lato', sans-serif;
 }
 body{
-    background-color: #5f5cfc;
+    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
+}
+body img{
+    filter: blur(3px);
+    top: 5%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 25%;
+    height: 25%;
+    position: fixed;
+    background-repeat: repeat-x;
 }
 .space{
     width: 600px;
     padding: 2rem 1rem;
     margin: 100px auto ;
-    background-color:#fca95c;
-    border-radius: 20px;
+    background-color: white;
+    border: 1px solid #fc9333;
+    border-radius: 10px;
     text-align: Center;
     box-shadow: 0px 20px 35 rgba(11, 57, 225, 0.453);
 }

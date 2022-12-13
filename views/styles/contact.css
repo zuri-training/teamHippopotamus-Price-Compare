@@ -5,17 +5,20 @@
 }
 
 body{
-    background-color: #5f5cfc;
+    background-color: white;
+    /* overflow-x: hidden; */
 }
-
+/* header and nav-bar */
 .splash-nav{
     background-color: white;
+    /* border: 1px solid black; */
+    box-shadow:  0px 10px 10px 5px rgba(0, 0, 0, 0.2);
     position: relative;
+    width: 85%;
+    height: 60px;
     left: 7%;
     padding: 20px;
     margin-top: 15px;
-    width: 85%;
-    height: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -61,14 +64,26 @@ input:focus{
     font-size: 20px;
     cursor: pointer;
 }
-
+.search-box button:hover,
+.search-box button:active{
+    color: #fb730a;
+}
 .splash-nav > button{
     font-size: 20px;
     cursor: pointer;
     background: none;
     border: none;
 }
-
+.splash-nav > p{
+    position: absolute;
+    left: 20%;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    background: linear-gradient(to left, #fdbe84, #fc9333, #fb730a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .splash-nav img{
     position: absolute;
     left: 20px;
@@ -81,34 +96,89 @@ input:focus{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 8% 
+    right: 8% ;
+    font-size: 30px;
 }
-.splash-nav .fa-bars{
+.splash-nav .fa-user:hover{
+    color: #fc9333;
+}
+.splash-nav .fa-user:active{
+    color: #fb730a;
+}
+.nav-select ul{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 5% 
+    left: 7%;
+    top: 20%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow:  0px 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+.nav-select ul li{
+    list-style: none;
+    margin-right: 100px;
+}
+.nav-select ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease;
+}
+.active{
+    border-bottom: 5px solid #fb730a;
+    width: 100%;
+    border-radius: 1px;
+    transition: 0.5s ease;
+}
+.nav-select li a:hover{
+    color: #fc9333;
+}
+.cart{
+    position: absolute;
+    right: 6%;
+    top: 20%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.cart .fa-shopping-cart{
+    color: #fb730a;
+    font-size: 40px;
+}
+.cart .fa-shopping-cart:hover{
+    border-radius: 50%;
+    background-color: #fdbe84;
+    padding: 15px;
+    color: white;
+    transition: ease-out 0.2s;
+}
+.cart .fa-shopping-cart:active{
+    border-radius: 50%;
+    background-color: #fb730a;
+    padding: 15px;
+    color: white;
 }
 .contact-form h2{
     position: absolute;
     left: 7%;
-    top: 17%;
+    top: 30%;
     text-transform: uppercase;
     font-size: 36px;
     font-weight: 700;
     font-stretch:extra-expanded;
-    color: #fc9333;
+    color: #5f5cfc;
 }
 .name {
     position: absolute;
     left: 6%;
-    top: 25%;
+    top: 35%;
     background-color: white;
     width: 35%;
     height: 6vh;
     margin: 10px;
     border-radius: 5px;
-    border: none;
+    border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,12 +203,13 @@ input:focus{
 .contact-form #email{
     position: absolute;
     left: 6%;
-    top: 35%;
+    top: 45%;
     background-color: white;
     width: 33.5%;
     height: 6vh;
     margin: 10px;
     border-radius: 5px;
+    border: 2px solid black;
 }
 .contact-form #email:focus{
     border: 2px solid black;
@@ -150,12 +221,13 @@ input:focus{
 .contact-form #message{
     position: absolute;
     left: 6%;
-    top: 45%;
+    top: 55%;
     background-color: white;
     width: 33.5%;
     height: 25vh;
     margin: 10px;
     border-radius: 5px;
+    border: 2px solid black;
 }
 .contact-form #message:focus{
     outline: none;
@@ -168,7 +240,7 @@ input:focus{
 }
 .contact-form button{
     position: absolute;
-    bottom: 22%;
+    bottom: 10%;
     left: 23%;
     padding: 3px 20px;
     border-radius: 5px;
@@ -189,7 +261,7 @@ input:focus{
 .mpt{
     position: absolute;
     right: 5.7%;
-    top: 17%;
+    top: 30%;
     width: 40%;
     height: 60%;
     background-color: white;
@@ -198,14 +270,17 @@ input:focus{
 /* Footer */
 footer {
     position: absolute;
-    top: 80%;
     bottom: 0;
+    top: 95%;
     background: white;
+    border: 2px solid black;
+    border-bottom: 0;
     width: 85%;
     height: 250px;
     padding: 24px 24px 16px;
     margin-left: 7%;
     border-radius: 10px 10px 0 0;
+    /* box-shadow: 10px 10px 10 10px black; */
 }
 .footer-social-icons{
     position: absolute;
@@ -288,4 +363,4 @@ footer button:hover{
 }
 footer button:active{
     background-color: #fdbe84
-}   
+}
