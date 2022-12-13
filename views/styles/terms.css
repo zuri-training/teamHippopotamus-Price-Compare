@@ -5,12 +5,14 @@
 }
 
 body{
-    background-color: #5f5cfc;
+    background-color: white;
     /* overflow-x: hidden; */
 }
-
+/* header and nav-bar */
 .splash-nav{
     background-color: white;
+    /* border: 1px solid black; */
+    box-shadow:  0px 10px 10px 5px rgba(0, 0, 0, 0.2);
     position: relative;
     width: 85%;
     height: 60px;
@@ -72,7 +74,16 @@ input:focus{
     background: none;
     border: none;
 }
-
+.splash-nav > p{
+    position: absolute;
+    left: 20%;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    background: linear-gradient(to left, #fdbe84, #fc9333, #fb730a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .splash-nav img{
     position: absolute;
     left: 20px;
@@ -85,22 +96,25 @@ input:focus{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 8% 
+    right: 8% ;
+    font-size: 30px;
 }
-.splash-nav .fa-bars{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 5% 
+.splash-nav .fa-user:hover{
+    color: #fc9333;
+}
+.splash-nav .fa-user:active{
+    color: #fb730a;
 }
 .nav-select ul{
     position: absolute;
     left: 7%;
     top: 20%;
+    height: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
     align-items: center;
+    box-shadow:  0px 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 .nav-select ul li{
     list-style: none;
@@ -108,7 +122,7 @@ input:focus{
 }
 .nav-select ul li a{
     text-decoration: none;
-    color: white;
+    color: black;
     transition: 0.5s ease;
 }
 .active{
@@ -137,6 +151,7 @@ input:focus{
     background-color: #fdbe84;
     padding: 15px;
     color: white;
+    transition: ease-out 0.2s;
 }
 .cart .fa-shopping-cart:active{
     border-radius: 50%;
@@ -145,32 +160,36 @@ input:focus{
     color: white;
 }
 .about-content{
-    position: relative;
+    position: absolute;
     margin-top: 7%;
     margin-bottom: 2%;
     margin-left: 10rem;
     margin-right: 10rem;
-    color: white;
+    color: black;
     font-size: 18px;
     line-height: 30px;
 }
 .top-left h1{
     text-align: center;
-    color:#aa6320;
+    color:#fc9333;
     margin: 20px;
     font-size: 35px;
     font-weight: bold;
  }
 /* Footer */
 footer {
-    position: relative;
+    position: absolute;
     bottom: 0;
+    top: 140%;
     background: white;
+    border: 2px solid black;
+    border-bottom: 0;
     width: 85%;
     height: 250px;
     padding: 24px 24px 16px;
     margin-left: 7%;
     border-radius: 10px 10px 0 0;
+    /* box-shadow: 10px 10px 10 10px black; */
 }
 .footer-social-icons{
     position: absolute;
