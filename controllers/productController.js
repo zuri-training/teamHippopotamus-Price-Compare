@@ -5,34 +5,29 @@ exports.getIndex = (req, res, next) => {
 };
 
 exports.getLandingPage = (req, res, next) => {
-  res
-    .status(200)
-    .render("home", {
-      pageTitle: "Landing Page",
-    });
+  res.status(200).render("home", {
+    pageTitle: "Landing Page",
+  });
 };
 
 exports.getAuthHomePage = (req, res, next) => {
-  res
-    .status(200)
-    .render("authHomepage", {
-      pageTitle: "Home Page",
-    });
-}
+  res.status(200).render("authHomepage", {
+    pageTitle: "Home Page",
+  });
+};
 
 exports.getCategory = (req, res, next) => {
-  res.sendFile(path.join(__dirname, "../", "views", "category.html"));
+  res.status(200).render("categories", { pageTitle: "Categories Page" });
 };
 
 exports.getTerms = (req, res, next) => {
-  res.sendFile(path.join(__dirname, "../", "views", "terms.html"));
+  res.status(200).render("terms", { pageTitle: "Terms Of Use" });
 };
 
 exports.getAccount = (req, res, next) => {
   res.sendFile(path.join(__dirname, "../", "views", "accounts.html"));
 };
 
-
 exports.postContact = (req, res, next) => {
-  res.sendFile(path.join(__dirname, "../", "views", "contact.html"));
+  res.status(200).render("contact", { pageTitle: "Contact Us Page" });
 };
