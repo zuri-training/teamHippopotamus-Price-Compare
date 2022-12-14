@@ -6,9 +6,26 @@
 
 body{
     background-color: white;
+    /* width: 1512px;
+    height: 1148px;  */
+
     /* overflow-x: hidden; */
 }
+body .img{
+    filter: blur(5px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 25%;
+    left: 25%;
+    z-index: -1;
+    width: 50%;
+    height: 50%;
+    position: fixed;
+}
 /* header and nav-bar */
+
+
 .splash-nav{
     background-color: white;
     /* border: 1px solid black; */
@@ -28,7 +45,7 @@ body{
 
 #search{
     height: 50px;
-    width: 500px;
+    width: 400px;
 }
 .search-box {
     background-color: white;
@@ -52,7 +69,16 @@ body{
 input:focus{
     outline: none;
 }
-
+.splash-nav > p{
+    position: absolute;
+    left: 17%;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    background: linear-gradient(to left, #fdbe84, #fc9333, #fb730a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .search-box > i{
     font-size: 20px;
     padding: 0 10px;
@@ -74,16 +100,7 @@ input:focus{
     background: none;
     border: none;
 }
-.splash-nav > p{
-    position: absolute;
-    left: 20%;
-    font-size: 40px;
-    font-weight: bolder;
-    font-style: italic;
-    background: linear-gradient(to left, #fdbe84, #fc9333, #fb730a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 .splash-nav img{
     position: absolute;
     left: 20px;
@@ -96,7 +113,7 @@ input:focus{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 8% ;
+    right: 7% ;
     font-size: 30px;
 }
 .splash-nav .fa-user:hover{
@@ -167,24 +184,25 @@ input:focus{
     background-repeat: no-repeat;
     /* background-position: center; */
     background-size: cover;
-    height: 365px;
+    height: 270px;
     width: 87%;
     margin-left: 7%;
-    margin-top: 200px;
+    margin-top: 120px;
     border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Hot Sales Grid */
 .items-grid-container {
     position: absolute;
-    margin-top: 750px;
+    margin-top: 500px;
     margin-left: 149px;
     padding-top: 0px;  
     display: grid;
     justify-content: center;
-    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px;
     grid-template-rows: 151px;
-    grid-column-gap: 61px;
+    grid-column-gap: 40px;
     background-size: contain;
     background-repeat: no-repeat;
     
@@ -195,6 +213,7 @@ input:focus{
     padding: 0px;
     border-radius: 8px;
     border: 1px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .grid-item-2 {
@@ -202,6 +221,7 @@ input:focus{
     padding: 0px;
     border-radius: 8px;
     border: 1px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .grid-item-3 {
@@ -209,6 +229,7 @@ input:focus{
     padding: 0px;
     border-radius: 8px;
     border: 1px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .grid-item-4 {
@@ -216,6 +237,7 @@ input:focus{
     padding: 0px;
     border-radius: 8px;
     border: 1px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .grid-item-5 {
@@ -223,6 +245,7 @@ input:focus{
     padding: 0px;
     border-radius: 8px;
     border: 1px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .grid-item-6 {
@@ -230,6 +253,7 @@ input:focus{
     padding: 0px;
     border-radius: 8px;
     border: 1px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Popular Searches */
@@ -238,7 +262,7 @@ h1 {
     height: 44px;
     width: 440px;
     margin-left: 7%;
-    margin-top: 1000px;
+    margin-top: 700px;
     border-radius: 0px;
     padding: 10px;
     font-size: 48px;
@@ -253,25 +277,28 @@ h1 {
     position: absolute;
     /* width: 1340px; */
     height: 1095px;
-    margin-top: 1125px;
+    margin-top: 770px;
     margin-left: 7%;
     margin-right: 6%;
     padding-top: 0px;
     display: grid;
     justify-content: center;
-    grid-template-columns: 470px 470px 470px;
-    grid-template-rows: 538px 538px;
-    grid-column-gap: 90px;
-    grid-row-gap: 19px;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 550px 550px;
+    grid-column-gap: 70px;
+    grid-row-gap: 100px;
 }
 
-/* .ps-grid-item {
+.ps-grid-item {
+    position: relative;
    background-color: white;
-} */
+}
 
 .grid-img {
-    width: 370px;
+    width: 330px;
     height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 h5 {
@@ -280,15 +307,17 @@ h5 {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     padding: 10px;
 }
 
 .compare-prize {
-    margin-top: 22px;
+    position: absolute;
+    bottom: 0;
+    /* margin-top: 22px; */
     height: 40px;
     width: 266.5px;
-    margin-left: 51.75px;
+    margin-left: 10%;
     border-radius: 4px;
     padding: 0px 16px 0px 16px;
     background-color: #fb730a;
@@ -297,13 +326,16 @@ h5 {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    cursor: pointer;
 }
 
 .add-to-cart {
+    position: absolute;
+    bottom: 50px;
     margin-top: 22px;
     height: 40px;
     width: 266.5px;
-    margin-left: 51.75px;
+    margin-left: 10%;
     border-radius: 4px;
     padding: 8px 16px 8px 16px;
     background-color: #fb730a;
@@ -312,6 +344,7 @@ h5 {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    cursor: pointer;
 }
 
 .grid-img1 {
@@ -338,69 +371,63 @@ h5 {
     background: url(../images/Icons24.png);
 }
 
-/* Subscribe */
-.subscribe {
+.subscribe{
     position: absolute;
-    width: 1488px;
-    height: 229px;
-    margin-left: 12px;
-    margin-top: 2200px;
+    top: 350%;
+    margin-top: -5%;
+    /* border: 1px solid #fb730a; */
+    left: 7%;
+    right: 6%;
+    /* width: 100%; */
 }
-
-.Icon10 {
-    position: relative;
-    margin-top: 200px;
-    margin-left: 75px;
-    width: 150px;
-    height: 150px;
-    color: #fb730a;
-}
-
-h2 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 72px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #fb730a;
-    margin-top: 53px;
-    margin-left: 265.5px;
-}
-
-h3 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-left: 265.5px;
-    margin-top: 16px;
+.subscribe i{
     color: white;
-}
-
-.subscribe-button {
-    position: absolute;
-    width: 83px;
-    height: 40px;
+    border-radius: 50%;
+    border: 2px black;
     background-color: #fb730a;
-    margin-left: 1209px;
-    margin-top: 95px;
-    border-radius: 10px;
-    border: #fb730a;
+    padding: 20px;
+    font-size: 60px;
+}
+.subscribe p{
+    color: #5f5cfc;
+    margin-left: 10%;
+    margin-top: -8.7%;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.subscribe p span{
+    color: #fb730a;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.subscribe button{
+    margin-left: 8%;
+    background-color: #fb730a;
+    padding:8px 5px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.subscribe button:hover{
+    background-color: #fc9333
+}
+.subscribe button:active{
+    background-color: #fdbe84
 }
 /* Footer */
 footer {
     position: absolute;
-    top: 300%;
     bottom: 0;
     background: white;
     border: 2px solid black;
     border-bottom: 0;
     width: 85%;
-    height: 250px;
+    height: 200px;
     padding: 24px 24px 16px;
     margin-left: 7%;
     border-radius: 10px 10px 0 0;
+    top: 365%;
     /* box-shadow: 10px 10px 10 10px black; */
 }
 .footer-social-icons{
@@ -428,6 +455,7 @@ footer {
 }
 footer ul li{
     list-style: none;
+    font-size: 14px;
 }
 footer ul li a{
     text-decoration: none;
@@ -445,7 +473,7 @@ ul li{
 }
 footer span{
     color: #fb730a;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
     display: inline-block;
@@ -461,7 +489,7 @@ footer .copyright{
     top: 10%;
     right: 10%;
     width: 6%;
-    font-size: small;
+    font-size: 10px;
     padding: 10px;
     background-color: #fdbe84;
     border-radius: 5px;
@@ -471,8 +499,8 @@ footer button{
     top: 65%;
     right: 10%;
     width: 7%;
-    line-height: 15px;
-    font-size: smaller;
+    line-height: 12px;
+    font-size: 10px;
     padding: 5px 8px;
     background-color: #fdbe84;
     border: none;
