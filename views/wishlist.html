@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="/views/styles/contact.css">
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="styles/wishlist.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+
     <!-- Search and Nav-bar -->
     <section>
 
         <div class="splash-nav">
-            <img src="/logo/hippo-compares.svg" alt="logo" aria-hidden="true" style="height: 60px;
+            <img src="images/hippo-compares.svg" alt="logo" aria-hidden="true" style="height: 60px;
                 width: 120px;">
-            <p>Hippo Compares</p>
+                <p>Hippo Compares</p>
             <div class="search-box">
                 <input type="search" name="search" id="search" placeholder="Search for products and deals">
                 <button><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -29,13 +30,13 @@
 
         <div class="nav-select" id="navSelect">
             <ul>
-                <li><a class="btn" href="#">Home
+                <li><a class="btn active" href="#">Home
                     </a></li>
                 <li><a class="btn" href="#">Deals </a></li>
                 <li><a class="btn" href="#">Stores</a></li>
                 <li><a class="btn" href="/views/category.html">Categories</a></li>
                 <li><a class="btn" href="#">Wishlist</a></li>
-                <li><a class="btn active" href="#">Contact us</a></li>
+                <li><a class="btn" href="/views/contact.html">Contact us</a></li>
             </ul>
         </div>
 
@@ -43,20 +44,65 @@
 
     </section>
 
-    <div class="contact-form">
-        <h2><b>Contact us</b></h2>
-        <div class="name">
-            <i class="fa fa-user" aria-hidden="true"></i>
-            <input type="text" name="name" id="name" placeholder="Name">
+    <h1>WISHLIST</h1>
+
+
+    <div class="products">
+      <div class="grid-prod">
+
+        <div class="grid-item">
+            <h2>Cosmetics</h2>
+          <img src="images/img3.jpg" alt="" style="width: 450px; height: 300px" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            aspernatur sint expedita quae sapiente accusamus natus, quas cumque
+            sequi voluptate fugit eius labore dignissimos quibusdam laudantium
+            ratione fuga itaque repudiandae?
+          </p>
+          <button class="add"><i class=" fa fa-shopping-cart" aria-hidden="true"> &nbsp; Add to Cart</i></button>
+          <button class="Price">Price</button>
         </div>
-        <input type="email" name="email" id="email" placeholder="Email">
-        <textarea name="" id="message" cols="50" rows="10" placeholder="Enter your message here"></textarea>
-        <button type="submit">SEND</button>
+        <div class="grid-item">
+            <h2>Furnitures</h2>
+          <img src="images/img4.jpg" alt="" style="width: 450px; height: 300px" />
+          
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            aspernatur sint expedita quae sapiente accusamus natus, quas cumque
+            sequi voluptate fugit eius labore dignissimos quibusdam laudantium
+            ratione fuga itaque repudiandae?
+          </p>
+          <button class="add"><i class=" fa fa-shopping-cart" aria-hidden="true"> &nbsp; Add to Cart</i></button>
+          <button class="Price">Price</button>
+        </div>
+        <div class="grid-item">
+            <h2>Wears</h2>
+          <img src="images/img5.jpg" alt="" style="width: 450px; height: 300px" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            aspernatur sint expedita quae sapiente accusamus natus, quas cumque
+            sequi voluptate fugit eius labore dignissimos quibusdam laudantium
+            ratione fuga itaque repudiandae?
+          </p>
+          <button class="add"><i class=" fa fa-shopping-cart" aria-hidden="true"> &nbsp; Add to Cart</i></button>
+          <button class="Price">Price</button>
+        </div>
+        <div class="grid-item">
+            <h2>Foods</h2>
+          <img src="images/img6.jpg" alt="" style="width: 450px; height: 300px" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            aspernatur sint expedita quae sapiente accusamus natus, quas cumque
+            sequi voluptate fugit eius labore dignissimos quibusdam laudantium
+            ratione fuga itaque repudiandae?
+          </p>
+          <button class="add"><i class=" fa fa-shopping-cart" aria-hidden="true"> &nbsp; Add to Cart</i></button>
+          <button class="Price">Price</button>
+        </div>
+       
+      </div>
     </div>
 
-    <div class="mpt">
-
-    </div>
 
     <!-- Footer -->
     <footer>

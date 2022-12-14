@@ -6,6 +6,8 @@
 
 body{
     background-color: white;
+    width: 100%;
+    height: 100%;
     /* overflow-x: hidden; */
 }
 /* header and nav-bar */
@@ -28,7 +30,7 @@ body{
 
 #search{
     height: 50px;
-    width: 500px;
+    width: 400px;
 }
 .search-box {
     background-color: white;
@@ -54,7 +56,7 @@ input:focus{
 }
 .splash-nav > p{
     position: absolute;
-    left: 20%;
+    left: 17%;
     font-size: 40px;
     font-weight: bolder;
     font-style: italic;
@@ -108,7 +110,7 @@ input:focus{
 .splash-btns{
     position: absolute;
     right: 105px;
-    top: 16%
+    top: 20%
 }
  button a {
     text-decoration: none;
@@ -175,8 +177,10 @@ input:focus{
 
 .slider img{
     width: 50vw;
-    height: 70vh;
+    height: 66vh;
     display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 .st{
     display: none;
@@ -192,6 +196,7 @@ input:focus{
     top: 50%;
     transform: translateY(50%);
     width: 50vw;
+    /* height: 33vh; */
     opacity: 0; 
 }
 .st-btn:hover{
@@ -199,12 +204,13 @@ input:focus{
 }
 .st-btn button{
     border-radius: 50%;
-    border: 0;
+    border: 1px solid black;
+    background-color: white;
     font-weight: bolder;
     font-size: large;
     cursor: pointer;
-    width: 50px;
-    height: 50px; 
+    width: 35px;
+    height: 35px; 
 }
 .st-btn #st-btn-prev{
     margin-left: 10px;

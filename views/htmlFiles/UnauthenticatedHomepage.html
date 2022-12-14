@@ -1,140 +1,183 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/views/styles/UnauthenticatedHomepage.css">
-    </head>
-    <body>
-        <div class="screen-container">
-            <!--Header-->
-            <header>
-                <div class="logo1"></div> <!--the logo-->
-                <div class="search-field">
-                    <div class="icon1"></div><!--1st Icon-->
-                    <input class="search" type="text" placeholder="Search for products and deals">
-                </div> <!--an icon in an input-->
-                <div class="profile"></div> <!--profile-->
-                <div class="hamb"></div> <!--hamburger-->
-            </header>
 
-            <!--Nav Bar-->
-            <nav>
-                <ul class="navbar">
-                    <li>Home</li>
-                    <li>Deals</li>
-                    <li>Stores</li>
-                    <li>Categories</li>
-                    <li>Wishlist</li>
-                    <li class="wishlist">Terms</li>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Homepage</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/views/styles/Homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="screen-container">
+        <!-- Search and Nav-bar -->
+        <section>
+
+            <div class="splash-nav">
+                <img src="/logo/hippo-compares.svg" alt="logo" aria-hidden="true" style="height: 60px;
+                width: 120px;">
+                <p>Hippo Compares</p>
+                <div class="search-box">
+                    <input type="search" name="search" id="search" placeholder="Search for products and deals">
+                    <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+
+                <button><i class="fa fa-user"></i></button>
+            </div>
+
+            <div class="nav-select" id="navSelect">
+                <ul>
+                    <li><a class="btn active" href="#">Home
+                        </a></li>
+                    <li><a class="btn" href="#">Deals </a></li>
+                    <li><a class="btn" href="#">Stores</a></li>
+                    <li><a class="btn" href="/views/category.html">Categories</a></li>
+                    <li><a class="btn" href="#">Wishlist</a></li>
+                    <li><a class="btn" href="/views/contact.html">Contact us</a></li>
                 </ul>
-            </nav>
-
-            <!--Cart-->
-            <div class="cart"></div> <!--cart icon-->
-
-            <!--Large Advert-->
-            <div class="large-advert"></div>
-
-            <!--Hot Sales-->
-            <div class="items-grid-container">
-                <div class="grid-item grid-item-1"></div>
-                <div class="grid-item grid-item-2"></div>
-                <div class="grid-item grid-item-3"></div>
-                <div class="grid-item grid-item-4"></div>
-                <div class="grid-item grid-item-5"></div>
-                <div class="grid-item grid-item-6"></div>
             </div>
 
-            <!--Popular Searches-->
-            <h1>Popular Searches</h1>
-            <div class="popular-searches-grid-container">
-                <div class="ps-grid-item psgrid-item-1">
-                    <div class="grid-img grid-img1"></div>
-                    <h5>Wholesale 100% natural human virgin tape hair kinky curly tape ins hair extensions <br> </h5>
-                    <button class="add-to-cart">Add to cart</button>
-                </div>
-                <div class="ps-grid-item psgrid-item-2">
-                    <!--<img src="images/Icon23.png" alt="cart image" class="img1">-->
-                    <!--<img src="images/Icon23.png" alt="cart image" class="img2">-->
-                    <div class="grid-img grid-img2"></div>
-                    <h5>Alibaba Online Shopping T- winner Watch Male Montre Homme Custom Logo Luxury Automatic Skeleton Men Mechanical Wrist Watches</h5>
-                    <button class="add-to-cart">Add to cart</button>
-                </div>
-                <div class="ps-grid-item psgrid-item-3">
-                    <div class="grid-img grid-img3"></div>
-                    <h5>alibaba online shop 2022 new design Luxury rhinestones women hand bag Evening Bags for Party Wedding</h5>
-                    <button class="add-to-cart">Add to cart</button>
-                </div>
-                <div class="ps-grid-item psgrid-item-4">
-                    <div class="grid-img grid-img4"></div>
-                    <h5>Bridesmaid Dresses Here, All Size, Fast Delivery, Up To 70% Off Today, Buy Now. Cheap Bridesmaid Dresses Online.</h5>
-                    <button class="add-to-cart">Add to cart</button>
-                </div>
-                <div class="ps-grid-item psgrid-item-5">
-                    <div class="grid-img grid-img5"></div>
-                    <h5>Shop fleece head band <br> <br> </h5>
-                    <button class="add-to-cart">Add to cart</button>
-                </div>
-                <div class="ps-grid-item psgrid-item-6">
-                    <div class="grid-img grid-img6"></div>
-                    <h5>Relective Latex Waist Trainer Zipper Double Belts 7 Steel Bones</h5>
-                    <button class="add-to-cart">Add to cart</button>
-                </div>
-            </div>
-            
-            <!--Subscribe-->
-            <div class="subscribe">
-                <button class="subscribe-button">Subscribe</button>
-                <div class="Icon10"><img src="images/Icon10.png" alt=""></div>
-                <div class="text"><h2>Subscribe to the monthly newsletter</h2> <h3>Get the latest  news and update on Hippocompares. You’ll be glad you did</h3></div>
-                
-            </div>
+            <div><button class="cart"><i class=" fa fa-shopping-cart" aria-hidden="true"></i></button></div>
 
-            <!-- Footer -->
-            <footer>
-                <!--Copyright-->
-                <div class="copyright">&copy;2022 Hippocompares</div>
-                <!--Social icons-->
-                <div class="social-icons">
-                    <div class="social logo5"><img src="images/Icon5.png" alt=""></div>
-                    <div class="social logo6"><img src="images/Icon6.png" alt=""></div>
-                    <div class="social logo7"><img src="images/Icon7.png" alt=""></div>
-                    <div class="social logo8"><img src="images/Icon8.png" alt=""></div>
-                    <div class="social logo9"><img src="images/Icon9.png" alt=""></div>
-                </div>
-                <!--Footer NavBar-->
-                <div class="footer-navbar-grid-container">
-                    <div class="footer-grid">ABOUT</div>
-                    <div class="footer-grid">CATALOG</div>
-                    <div class="footer-grid">LEARN MORE</div>
-                    <div class="footer-grid-item">About Hippocompares</div>
-                    <div class="footer-grid-item">Televisions</div>
-                    <div class="footer-grid-item">Browser Extention</div>
-                    <div class="footer-grid-item">Cookie policy</div>
-                    <div class="footer-grid-item">Cell phones</div>
-                    <div class="footer-grid-item">Enterprise</div>
-                    <div class="footer-grid-item">Privacy Policy</div>
-                    <div class="footer-grid-item">Brands</div>
-                    <div class="footer-grid-item">Data API</div>
-                    <div class="footer-grid-item">Contact</div>
-                    <div class="footer-grid-item">Digital Cameras</div>
-                    <div class="footer-grid-item">Help</div>
-                    <div class="footer-grid-item"></div>
-                    <div class="footer-grid-item">Tablet</div>
-                    <div class="footer-grid-item"></div>
-                    <div class="footer-grid-item"></div>
-                    <div class="footer-grid-item">Wares</div>
-                </div>
-                <!--Contact Us-->
-                <div class="contact">
-                    <div class="address"><p>Contact Us<br>Hippocompares<br>90 Taison St.<br>Maitama Zone 2, Abuja<br>P.M.B 406<br>12345463762</p></div>
-                    <div class="comments"><p>Comments and<br>Suggestions</p></div>
-                </div>
-            </footer>
+        </section>
+
+        <!--Large Advert-->
+        <div class="large-advert"></div>
+
+        <!--Hot Sales-->
+        <div class="items-grid-container">
+            <div class="grid-item grid-item-1"></div>
+            <div class="grid-item grid-item-2"></div>
+            <div class="grid-item grid-item-3"></div>
+            <div class="grid-item grid-item-4"></div>
+            <div class="grid-item grid-item-5"></div>
+            <div class="grid-item grid-item-6"></div>
         </div>
-    </body>
+
+        <!--Popular Searches-->
+        <h1>Popular Searches</h1>
+        <div class="popular-searches-grid-container">
+            <div class="ps-grid-item psgrid-item-1">
+                <div class="grid-img grid-img1"></div>
+                <h5>Wholesale 100% natural human virgin tape hair kinky curly tape ins hair extensions <br> </h5>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="ps-grid-item psgrid-item-2">
+                <!--<img src="images/Icon23.png" alt="cart image" class="img1">-->
+                <!--<img src="images/Icon23.png" alt="cart image" class="img2">-->
+                <div class="grid-img grid-img2"></div>
+                <h5>Alibaba Online Shopping T- winner Watch Male Montre Homme Custom Logo Luxury Automatic Skeleton Men
+                    Mechanical Wrist Watches</h5>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="ps-grid-item psgrid-item-3">
+                <div class="grid-img grid-img3"></div>
+                <h5>alibaba online shop 2022 new design Luxury rhinestones women hand bag Evening Bags for Party Wedding
+                </h5>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="ps-grid-item psgrid-item-4">
+                <div class="grid-img grid-img4"></div>
+                <h5>Bridesmaid Dresses Here, All Size, Fast Delivery, Up To 70% Off Today, Buy Now. Cheap Bridesmaid
+                    Dresses Online.</h5>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="ps-grid-item psgrid-item-5">
+                <div class="grid-img grid-img5"></div>
+                <h5>Shop fleece head band <br> <br> </h5>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="ps-grid-item psgrid-item-6">
+                <div class="grid-img grid-img6"></div>
+                <h5>Relective Latex Waist Trainer Zipper Double Belts 7 Steel Bones</h5>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+        </div>
+
+        <!--Subscribe-->
+        <div class="subscribe">
+            <div>
+                <i class="fa fa-envelope-o" aria-hidden="true"> </i>
+                <p><span> Subscribe to the monthly newsletter </span><br> <br>
+                    Get the latest news and update on Hippocompares. You’ll be glad you did
+                    <button>Subscribe</button>
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+
+            <div class="footer-social-icons" id="footer">
+                <ul>
+                    <li><i class="fa fa-facebook-official" aria-hidden="true" style="color: blue;"></i></li>
+                    <li><i class="fa fa-linkedin-square" aria-hidden="true" style="color: blue;"></i>
+                    </li>
+                    <li><i class="fa fa-twitter" aria-hidden="true" style="color: blue;"></i></li>
+                    <li><i class="fa fa-youtube-play" aria-hidden="true" style="color: red;"></i></li>
+                    <li><i class="fa fa-instagram" aria-hidden="true" style="color: red;"></i></li>
+                </ul>
+            </div>
+
+            <div class="footer-about">
+                <ul>
+                    <li><span>About</span></li>
+                    <li><a href="">About HippoCompares</a></li>
+                    <li><a href="">Cookies policy</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">Connect</a></li>
+                    <li><a href="/views/terms.html">Terms</a></li>
+                </ul>
+            </div>
+            <div class="footer-catalog">
+                <ul>
+                    <li><span>Catalog</span></li>
+                    <li><a href="">Televisions</a></li>
+                    <li><a href="">Cell phones</a></li>
+                    <li><a href="">Brands</a></li>
+                    <li><a href="">Digital Cameras</a></li>
+                    <li><a href="">Tablets</a></li>
+                    <li><a href="">Wears</a></li>
+                </ul>
+            </div>
+            <div class="footer-learn">
+                <ul>
+                    <li><span>Learn More</span></li>
+                    <li><a href="">Browser Extension</a></li>
+                    <li><a href="">Enterprise</a></li>
+                    <li><a href="">Data API</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+            </div>
+            <div class="copyright">&copy;2022 Hippocompares</div>
+
+            <div class="footer-contact-us">
+                Contact Us Hippocompares 90 Taison St. Maitama Zone 2, Abuja P.M.B 406 12345463762
+            </div>
+
+            <button> Comments and Suggestions</button>
+
+        </footer>
+
+    </div>
+
+    <script>
+        var btnContainer = document.getElementById("navSelect");
+        var btns = btnContainer.getElementsByClassName("btn");
+
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName('active');
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+</body>
+
 </html>

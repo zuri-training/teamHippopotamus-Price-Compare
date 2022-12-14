@@ -6,26 +6,9 @@
 
 body{
     background-color: white;
-    /* width: 1512px;
-    height: 1148px;  */
-
     /* overflow-x: hidden; */
 }
-body .img{
-    filter: blur(5px);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    top: 25%;
-    left: 25%;
-    z-index: -1;
-    width: 50%;
-    height: 50%;
-    position: fixed;
-}
 /* header and nav-bar */
-
-
 .splash-nav{
     background-color: white;
     /* border: 1px solid black; */
@@ -45,7 +28,7 @@ body .img{
 
 #search{
     height: 50px;
-    width: 400px;
+    width: 500px;
 }
 .search-box {
     background-color: white;
@@ -69,16 +52,7 @@ body .img{
 input:focus{
     outline: none;
 }
-.splash-nav > p{
-    position: absolute;
-    left: 17%;
-    font-size: 40px;
-    font-weight: bolder;
-    font-style: italic;
-    background: linear-gradient(to left, #fdbe84, #fc9333, #fb730a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 .search-box > i{
     font-size: 20px;
     padding: 0 10px;
@@ -100,7 +74,16 @@ input:focus{
     background: none;
     border: none;
 }
-
+.splash-nav > p{
+    position: absolute;
+    left: 20%;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    background: linear-gradient(to left, #fdbe84, #fc9333, #fb730a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .splash-nav img{
     position: absolute;
     left: 20px;
@@ -113,7 +96,7 @@ input:focus{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 7% ;
+    right: 8% ;
     font-size: 30px;
 }
 .splash-nav .fa-user:hover{
@@ -176,19 +159,170 @@ input:focus{
     padding: 15px;
     color: white;
 }
+
+h1{
+    color: #fc9333;
+    position: relative;
+    top: 120px;
+    text-align: center;
+    font-size: 70px; 
+    margin-bottom: 150px;
+    
+    
+  }
+
+
+ input{
+    height: 100%;
+     width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 0 15px;
+    margin: 2px;
+} 
+input:focus{
+    outline: none;
+}
+
+.search-box > i{
+    font-size: 20px;
+    padding: 0 10px;
+}
+.search-box button{
+    padding: 0 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.splash-nav > button{
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.splash-nav img{
+    position: absolute;
+    left: 20px;
+}
+.splash-nav .search-box{
+    position: absolute;
+    right: 15%;
+}
+.splash-nav .fa-user{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8% 
+}
+.splash-nav .fa-bars{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5% 
+}
+.products .top-prod{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1px; */
+}
+
+
+.grid-item p{
+    position: relative;
+    left: 500px;
+    bottom: 200px;
+    color: rgb(0, 0, 0);
+    
+
+}
+.grid-item h2{
+    position: relative;
+    left: 500px;
+    top: 50px;
+    color: #5f5cfc;
+    font-size: 50px;
+}
+
+.products .grid-prod{
+    /* position: relative; */
+    
+    margin-bottom: 3%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 450px ;
+    justify-content: left;
+    
+}
+.products .grid-prod img{
+    border-radius: 10px;
+}
+.products .grid-prod p{
+    /* margin: 5px; */
+    font-style: 16px;
+    text-align: left;
+    display: flex;
+}
+.add {
+    position: relative;
+    left: 850px;
+    bottom: 130px;
+    width: 25%;
+    margin-left: 50%;
+    transform: translateX(100%);
+    margin-top: 5px;
+    /* margin-bottom: 10px; */
+    border-radius: 5px;
+    background-color: #fb730a;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 5px ;
+}
+
+.Price {
+    position: relative;
+    left: 690px;
+    bottom: 260px;
+    width: 25%;
+    margin-left: 50%;
+    transform: translateX(100%);
+    margin-top: 5px;
+    /* margin-bottom: 10px; */
+    border-radius: 5px;
+    background-color: #ffffff;
+    border-color: #fb730a;
+    border: solid 1px;
+    cursor: pointer;
+    color: #fb730a;
+    padding: 5px ;
+}
+.remove :hover{
+    background-color: #fc9333
+}
+.products .grid-prod button:active{
+    background-color: #fdbe84
+}
+.products .grid-prod button i{
+    color: white;
+}
+
 /* Footer */
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     background: white;
     border: 2px solid black;
     border-bottom: 0;
     width: 85%;
-    height: 200px;
+    height: 250px;
     padding: 24px 24px 16px;
     margin-left: 7%;
     border-radius: 10px 10px 0 0;
-    /* margin-top: 921px; */
     /* box-shadow: 10px 10px 10 10px black; */
 }
 .footer-social-icons{
@@ -216,7 +350,6 @@ footer {
 }
 footer ul li{
     list-style: none;
-    font-size: 14px;
 }
 footer ul li a{
     text-decoration: none;
@@ -234,7 +367,7 @@ ul li{
 }
 footer span{
     color: #fb730a;
-    font-size: 16px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
     display: inline-block;
@@ -250,7 +383,7 @@ footer .copyright{
     top: 10%;
     right: 10%;
     width: 6%;
-    font-size: 10px;
+    font-size: small;
     padding: 10px;
     background-color: #fdbe84;
     border-radius: 5px;
@@ -260,8 +393,8 @@ footer button{
     top: 65%;
     right: 10%;
     width: 7%;
-    line-height: 12px;
-    font-size: 10px;
+    line-height: 15px;
+    font-size: smaller;
     padding: 5px 8px;
     background-color: #fdbe84;
     border: none;
