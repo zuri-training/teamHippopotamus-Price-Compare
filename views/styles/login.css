@@ -6,8 +6,9 @@
   outline: none;
 }
 
+/* hippoCompares.jpg */
 body {
-  background-image: url ("./logo/hippoCompares.jpg");
+  background: url(../../logo/hippo-compares.svg);
 }
 
 .split-screen {
