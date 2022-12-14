@@ -11,6 +11,23 @@ body {
   background: url(../../logo/hippo-compares.svg);
 }
 
+.user-message{
+  margin: auto;
+  /* margin-top: 50px; */
+  width: 90%;
+  border: 1px solid blue;
+  padding: 1rem;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #3733fc;
+}
+
+.user-message_error {
+  border-color: red;
+  background-color: rgb(255, 176, 176);
+  color: red;
+}
+
 .split-screen {
   width: 100%;
   min-height: 100vh;

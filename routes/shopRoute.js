@@ -14,10 +14,10 @@ router.get("/home", productCtrl.getLandingPage);
 router.get("/authhome", isAuth, productCtrl.getAuthHomePage);
 
 // category page router
-router.get("/categories", productCtrl.getCategory);
+router.get("/categories", isAuth, productCtrl.getCategory);
 
 // account page router
-router.get("/accounts", productCtrl.getAccount);
+router.get("/accounts", isAuth, productCtrl.getAccount);
 
 // terms page router
 router.get("/terms", productCtrl.getTerms);

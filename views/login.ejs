@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     
-    <link rel="stylesheet" href="/views/styles/login.css" />
+    <link rel="stylesheet" href="styles/login.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -23,15 +23,12 @@
   </head>
   <body>
     <div class="split-screen">
-      <% if (errorMessage) { %>
-        <div><%= errorMessage %></div>
-      <% } %>
       <div class="right">
-        <form action="/" method="POST">
+        <form action="/login" method="POST">
           <section class="copy">
             <h1>Login to your Account</h1>
             <div class="login-container">
-              <div class="go-back"><a href="/views/htmlFiles/index.html">&#8249</a></div>
+              <div class="go-back"><a href="/">&#8249</a></div>
               <p id="login">Login using social networks</p>
               <a href="#"><i class="fab fa-facebook-f" style="color: blue; font-size: 40px; margin: 0 50px;"></i></a>
               <a href="#"><i class="fab fa-twitter" style="color: blue; font-size: 40px; margin: 0 50px;"></i></a>
@@ -39,13 +36,16 @@
               <p class="or" style="text-decoration: none;">OR</p>
             </div>
           </section>
+          <% if (errorMessage) { %>
+            <div class="user-message user-message_error"><%= errorMessage %></div>
+          <% } %>
           <div class="input-group1">
             <i class="fas fa-envelope"></i>
-            <input type="text" placeholder="Email" required />
+            <input type="text" name="email" placeholder="Email" required />
           </div>
           <div class="input-group2">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" required />
+            <input type="password" name="password" placeholder="Password" required />
           </div>
           <button id="forget" type="reset">Forget Password?</button>
           <div ><button class="btn-1" type="submit">LOGIN</button></div>
@@ -53,7 +53,7 @@
 
           <div class="no-account-container">
             <p style="text-decoration: none;" id="no-acct">Don't have an acount? </p>
-            <button type="reset" onclick="window.location='/views/htmlFiles/signup.html'">Create an account</button>
+            <button type="reset" onclick="window.location='/register'">Create an account</button>
           </div>
         </form>
       </div>
@@ -64,7 +64,7 @@
             Sign-up and discover how you can compare prices and enjoy a great
             amount and new opportunities!
           </p>
-          <button class="sign-up" type="button" onclick="window.location='/views/htmlFiles/signup.html'">SIGN UP</button>
+          <button class="sign-up" type="button" onclick="window.location='/register'">SIGN UP</button>
         </section>
       </div>
     </div>

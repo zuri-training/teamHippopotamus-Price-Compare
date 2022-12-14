@@ -42,8 +42,15 @@
     </p>
 
     <div class="splash-btns">
-      <button id="sign-in" onclick="window.location='/views/htmlFiles/login.html';">SIGN-IN</button>
-      <button id="skip" onclick="window.location='/views/htmlFiles/UnauthenticatedHomepage.html';">SKIP</button>
+      <% if (!isAuthenticated) { %>
+      <button id="sign-in" onclick="window.location='/login';">SIGN-IN</button>
+      <button id="skip" onclick="window.location='/home';">SKIP</button>
+      <% } else { %>
+      <form action="/logout" method="post">
+
+        <button type="submit">Logout</button>
+    </form>
+    <% } %>
     </div>
 
     <section class="section">
