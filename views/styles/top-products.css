@@ -6,9 +6,26 @@
 
 body{
     background-color: white;
+    /* width: 1512px;
+    height: 1148px;  */
+
     /* overflow-x: hidden; */
 }
+body .img{
+    filter: blur(5px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 25%;
+    left: 25%;
+    z-index: -1;
+    width: 50%;
+    height: 50%;
+    position: fixed;
+}
 /* header and nav-bar */
+
+
 .splash-nav{
     background-color: white;
     /* border: 1px solid black; */
@@ -28,7 +45,7 @@ body{
 
 #search{
     height: 50px;
-    width: 500px;
+    width: 400px;
 }
 .search-box {
     background-color: white;
@@ -52,7 +69,16 @@ body{
 input:focus{
     outline: none;
 }
-
+.splash-nav > p{
+    position: absolute;
+    left: 17%;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    background: linear-gradient(to left, #fdbe84, #fc9333, #fb730a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .search-box > i{
     font-size: 20px;
     padding: 0 10px;
@@ -74,16 +100,7 @@ input:focus{
     background: none;
     border: none;
 }
-.splash-nav > p{
-    position: absolute;
-    left: 20%;
-    font-size: 40px;
-    font-weight: bolder;
-    font-style: italic;
-    background: linear-gradient(to left, #fdbe84, #fc9333, #fb730a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 .splash-nav img{
     position: absolute;
     left: 20px;
@@ -96,7 +113,7 @@ input:focus{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 8% ;
+    right: 7% ;
     font-size: 30px;
 }
 .splash-nav .fa-user:hover{
@@ -170,9 +187,9 @@ input:focus{
     margin-left: 7%;
     margin-top: 2%;
     display: grid;
-    grid-template-columns: 700px 700px;
-    grid-template-rows: 500px 500px;
-    column-gap: 9%;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 350px 350px;
+    column-gap: 20%;
     /* row-gap: 1%; */
 }
 .products .product-one,
@@ -187,19 +204,20 @@ input:focus{
 .products .product-four #prod-detail{
     position: absolute;
     top: 30%;
-    left: 60%;
+    width: 60%;
+    left: 90%;
     line-height: 25px;
-    font-size: 20px;
-    color: white;
+    font-size: 16px;
+    color: black;
 }
 .products .product-one #review,
 .products .product-two #review,
 .products .product-three #review,
 .products .product-four #review{
     position: absolute;
-    top: 55%;
-    left: 60%;
-    width: 35%;
+    top: 60%;
+    left: 90%;
+    width: 60%;
     line-height: 25px;
     display: flex;
     align-items: center;
@@ -226,16 +244,17 @@ input:focus{
 }
 /* Footer */
 footer {
-    position: relative;
+    position: absolute;
     bottom: 0;
     background: white;
     border: 2px solid black;
     border-bottom: 0;
     width: 85%;
-    height: 250px;
+    height: 200px;
     padding: 24px 24px 16px;
     margin-left: 7%;
     border-radius: 10px 10px 0 0;
+    top: 160%;
     /* box-shadow: 10px 10px 10 10px black; */
 }
 .footer-social-icons{
@@ -263,6 +282,7 @@ footer {
 }
 footer ul li{
     list-style: none;
+    font-size: 14px;
 }
 footer ul li a{
     text-decoration: none;
@@ -280,7 +300,7 @@ ul li{
 }
 footer span{
     color: #fb730a;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
     display: inline-block;
@@ -296,7 +316,7 @@ footer .copyright{
     top: 10%;
     right: 10%;
     width: 6%;
-    font-size: small;
+    font-size: 10px;
     padding: 10px;
     background-color: #fdbe84;
     border-radius: 5px;
@@ -306,8 +326,8 @@ footer button{
     top: 65%;
     right: 10%;
     width: 7%;
-    line-height: 15px;
-    font-size: smaller;
+    line-height: 12px;
+    font-size: 10px;
     padding: 5px 8px;
     background-color: #fdbe84;
     border: none;

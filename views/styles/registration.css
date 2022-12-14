@@ -8,8 +8,9 @@ body{
     background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
-body img{
+/* body img{
     filter: blur(3px);
     top: 5%;
     left: 0;
@@ -20,38 +21,38 @@ body img{
     height: 25%;
     position: fixed;
     background-repeat: repeat-x;
-}
+} */
 .space{
-    width: 600px;
+    width: 60%;
     padding: 2rem 1rem;
-    margin: 100px auto ;
+    margin: 40px auto ;
     background-color: white;
     border: 1px solid #fc9333;
     border-radius: 10px;
-    text-align: Center;
-    box-shadow: 0px 20px 35 rgba(11, 57, 225, 0.453);
+    /* text-align: Center; */
+    box-shadow: 0px 20px 35px rgba(11, 57, 225, 0.453);
 }
 
 h1{
+    text-align: center;
     font-size: 3rem;
-    color: #ffffff;
-    margin-bottom: 2.3rem;
+    color: #5f5cfc;
+    margin-bottom: 40px;
 }
-
-
 form input, select{
     font-size: medium;
-    width: 88%;
+    width: 90%;
     outline: none;
-    border: 1.8px solid rgb(187, 235, 240);
+    border: 1.8px solid black;
     padding: 6px 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 25px;
     background: #ffff;
+    margin-left: 2%;
 }
-form input :hover{
+input :hover{
     border: 2px solid #2bbf78;
-
 }
 
 ::placeholder{
@@ -60,37 +61,45 @@ form input :hover{
 }
 label{
     font-size: medium;
-    color: rgb(171, 196, 196);
-
+    color: black;
+    margin-left: 2%;
+    margin-bottom: 20px;
+    width: 100%;
+    /* float: left; */
 }
 .member{
     font-size: medium;
-    color: azure;
+    color: #5f5cfc;
     font-weight: 0.8rem;
     margin-top: 1.3rem;
+    margin-left: 60%;
 }
 .member a{
-    color: #5f5cfc;
+    color: #fc9333;
     text-decoration: none;
+    margin-left: 15px;
+    border: 1px solid #fc9333;
+    padding: 5px;
+    border-radius: 7px;
 }
 .member a:hover{
-    color: #5f5cfc;
+    background-color: #fc9333;
+    color: white;
 }
 button{
     font-size: 1rem;
-    margin-top: 1.5rem;
-    padding: 10px 0;
-    border-radius: 20px;
+    margin: 10px 15px;
+    padding: 10px 5px;
+    border-radius: 8px;
     border: none; 
     outline: none;
-    width: 40%;
-    background: #5f5cfc;
+    width: 15%;
+    background: #fc9333;
     color: white;
     cursor: pointer;
 }
 button:hover{
-    background-color: #cfcefe;
-}
-input:focus{
-    border: #092a1a 3px;
+    background-color: white;
+    color: #fc9333;
+    border: 1px solid #fc9333;
 }

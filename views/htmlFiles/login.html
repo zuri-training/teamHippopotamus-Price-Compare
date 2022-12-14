@@ -26,14 +26,14 @@
       <div class="right">
         <form action="/" method="POST">
           <section class="copy">
-            <div class="go-back"><a href="/views/htmlFiles/index.html">&#8592</a></div>
             <h1>Login to your Account</h1>
             <div class="login-container">
-              <p>Login using social networks</p>
+              <div class="go-back"><a href="/views/htmlFiles/index.html">&#8249</a></div>
+              <p id="login">Login using social networks</p>
               <a href="#"><i class="fab fa-facebook-f" style="color: blue; font-size: 40px; margin: 0 50px;"></i></a>
               <a href="#"><i class="fab fa-twitter" style="color: blue; font-size: 40px; margin: 0 50px;"></i></a>
-              <a href="#"><i class="fab fa-instagram" style="color: pink; font-size: 40px; margin: 0 50px;"></i></a</i>
-              <p class="red">OR</p>
+              <a href="#"><i class="fab fa-instagram" style="color: red; font-size: 40px; margin: 0 50px;"></i></a>
+              <p class="or" style="text-decoration: none;">OR</p>
             </div>
           </section>
           <div class="input-group1">
@@ -44,29 +44,24 @@
             <i class="fas fa-lock"></i>
             <input type="password" placeholder="Password" required />
           </div>
-          <h4>Forget Password?</h4>
-          <div class="btg"><button class="btn-1" type="submit">LOGIN</button></div>
+          <button id="forget" type="reset">Forget Password?</button>
+          <div ><button class="btn-1" type="submit">LOGIN</button></div>
           
 
           <div class="no-account-container">
-            <div class="hippo">
-              <p>Don't have an account?</p>
-
-            </div>
-            <div class="create">
-              <p><a class="acct" href="{% url 'register' %}">Create an account</a></p>
-            </div>
+            <p style="text-decoration: none;" id="no-acct">Don't have an acount? </p>
+            <button type="reset" onclick="window.location='/views/htmlFiles/signup.html'">Create an account</button>
           </div>
         </form>
       </div>
       <div class="left">
         <section class="copy">
           <h2>New Here ?</h2>
-          <p id="pp">
-            Sign-up and discover how you can compare <br> prices and enjoy a great
-            amount and <br> new opportunities!
+          <p>
+            Sign-up and discover how you can compare prices and enjoy a great
+            amount and new opportunities!
           </p>
-          <button class="sign-up" type="button">SIGN UP</button>
+          <button class="sign-up" type="button" onclick="window.location='/views/htmlFiles/signup.html'">SIGN UP</button>
         </section>
       </div>
     </div>
