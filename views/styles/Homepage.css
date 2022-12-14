@@ -371,17 +371,14 @@ h5 {
     background: url(../images/Icons24.png);
 }
 
+/* Subscribe */
 .subscribe{
-    position: absolute;
-    top: 350%;
-    margin-top: -5%;
-    /* border: 1px solid #fb730a; */
-    left: 7%;
-    right: 6%;
-    /* width: 100%; */
+    margin-bottom: 5%;
+    margin-top: 140%;
 }
 .subscribe i{
     color: white;
+    margin-left: 7%;
     border-radius: 50%;
     border: 2px black;
     background-color: #fb730a;
@@ -390,8 +387,8 @@ h5 {
 }
 .subscribe p{
     color: #5f5cfc;
-    margin-left: 10%;
-    margin-top: -8.7%;
+    margin-left: 16%;
+    margin-top: -7.5%;
     font-weight: bolder;
     font-size: 20px;
 }
@@ -401,7 +398,7 @@ h5 {
     font-weight: bolder;
 }
 .subscribe button{
-    margin-left: 8%;
+    margin-left: 2%;
     background-color: #fb730a;
     padding:8px 5px;
     border-radius: 7px;

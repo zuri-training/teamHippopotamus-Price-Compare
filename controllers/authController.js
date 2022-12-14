@@ -2,16 +2,27 @@ const User = require("../models/userModel");
 const bcrypt = require("bcryptjs");
 
 exports.getSignUp = (req, res, next) => {
+  let message = req.flash("error");
+  if (message.length > 0) {
+    message = message[0];
+  } else {
+    message = null;
+  }
   res
     .status(200)
-    .render("signup", { pageTitle: "Register Page" });
-  // res.sendFile(path.join(__dirname, '../', 'views', 'signup.html'))
+    .render("signup", { pageTitle: "Register Page", errorMessage: message });
 };
 
 exports.getLogin = (req, res, next) => {
+  let message = req.flash("error");
+  if (message.length > 0) {
+    message = message[0];
+  } else {
+    message = null;
+  }
   res.status(200).render("login", {
     pageTitle: "Login Page",
-    errorMessage: req.flash('error')
+    errorMessage: message,
   });
 };
 
@@ -21,7 +32,7 @@ exports.postLogin = (req, res, next) => {
   User.findOne({ email })
     .then((user) => {
       if (!user) {
-        req.flash('error', 'Invalid Credientials')
+        req.flash("error", "Invalid email or password");
         return res.redirect("/login");
       }
       bcrypt
@@ -29,12 +40,13 @@ exports.postLogin = (req, res, next) => {
         .then((passwordMatch) => {
           if (passwordMatch) {
             req.session.isLoggedIn = true;
-            req.session.user = user
-            return req.session.save(err => {
-                console.log(err)
-                res.redirect("/authhome");
-            })
+            req.session.user = user;
+            return req.session.save((err) => {
+              console.log(err);
+              res.redirect("/authhome");
+            });
           }
+          req.flash("error", "Invalid email or password");
           res.redirect("/login");
         })
         .catch((err) => {
@@ -54,6 +66,7 @@ exports.postSignUp = (req, res, next) => {
   User.findOne({ email })
     .then((userData) => {
       if (userData) {
+        req.flash("error", "Email exists already, kindly use another one");
         return res.redirect("/register");
       }
       return bcrypt
@@ -78,8 +91,8 @@ exports.postSignUp = (req, res, next) => {
 };
 
 exports.postLogout = (req, res, next) => {
-  req.session.destroy(err => {
-    console.log(err)
-    res.redirect('/')
-  })
-}
+  req.session.destroy((err) => {
+    console.log(err);
+    res.redirect("/");
+  });
+};

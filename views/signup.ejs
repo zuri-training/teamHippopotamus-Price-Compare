@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Registration page</title>
-  <link rel="stylesheet" href="/views/styles/registration.css">
+  <link rel="stylesheet" href="styles/registration.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -17,20 +17,23 @@
   <div class="space">
     <img src="/logo/hippo-compares.svg" alt="" width="100px" style="float: left; margin-left: 6%; margin-bottom: 15px;">
     <h1>Sign Up</h1>
-    <form action="./registration success.html">
+    <% if (errorMessage) { %>
+      <div class="user-message user-message_error"><%= errorMessage %></div>
+    <% } %>
+    <form action="/register" method="POST">
       <label for="name">Name</label> <br>
       <input type="text" name="firstname" id="" placeholder="First name" required style="width: 40%; margin-right: 20px;">
       <input type="text" name="lastname" id="" placeholder="Last name" required style="width: 40%;"> <br>
       <label for="Number">Phone Number</label>
-      <input type="tel" name="Number" id="" placeholder="Phone Number"> <br>
+      <input type="tel" name="number" id="" placeholder="Phone Number"> <br>
       <label for="email">Email</label> <br>
       <input type="email" name="email" id="" placeholder="Email" required> <br>
       <label for="password">Password</label>
       <input type="password" name="password" id="" placeholder="password" required>
       <label for="password">Confirm Password</label>
-        <input type="password" name="password" id="" placeholder=" confirm password" required>
+        <input type="password" name="confirmpassword" id="" placeholder=" confirm password" required>
       <button type="submit" style="float: left;">Sign Up</button>
-      <div class="member">Already a member? <a href="./index.html">Login Here</a>
+      <div class="member">Already a member? <a href="/login">Login Here</a>
       </div>
 
 
