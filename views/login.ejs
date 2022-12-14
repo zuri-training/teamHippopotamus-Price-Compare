@@ -21,6 +21,9 @@
   </head>
   <body>
     <div class="split-screen">
+      <% if (errorMessage) { %>
+        <div><%= errorMessage %></div>
+      <% } %>
       <div class="right">
         <form action="/login" method="POST">
           <section class="copy">

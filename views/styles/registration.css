@@ -34,7 +34,7 @@ body img{
 
 h1{
     font-size: 3rem;
-    color: #ffffff;
+    color: rgba(11, 57, 225, 0.453);;
     margin-bottom: 2.3rem;
 }
 
@@ -65,7 +65,7 @@ label{
 }
 .member{
     font-size: medium;
-    color: azure;
+    color: rgba(11, 57, 225, 0.453);
     font-weight: 0.8rem;
     margin-top: 1.3rem;
 }

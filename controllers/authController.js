@@ -11,6 +11,7 @@ exports.getSignUp = (req, res, next) => {
 exports.getLogin = (req, res, next) => {
   res.status(200).render("login", {
     pageTitle: "Login Page",
+    errorMessage: req.flash('error')
   });
 };
 
@@ -20,6 +21,7 @@ exports.postLogin = (req, res, next) => {
   User.findOne({ email })
     .then((user) => {
       if (!user) {
+        req.flash('error', 'Invalid Credientials')
         return res.redirect("/login");
       }
       bcrypt
