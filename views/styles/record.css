@@ -6,9 +6,28 @@
 
 body{
     background-color: white;
+    max-width: 100%;
+    margin: 0 auto;
+    /* width: 1512px;
+    height: 1148px;  */
+
     /* overflow-x: hidden; */
 }
+body .img{
+    filter: blur(5px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 25%;
+    left: 25%;
+    z-index: -1;
+    width: 50%;
+    height: 50%;
+    position: fixed;
+}
 /* header and nav-bar */
+
+
 .splash-nav{
     background-color: white;
     /* border: 1px solid black; */
@@ -28,7 +47,7 @@ body{
 
 #search{
     height: 50px;
-    width: 500px;
+    width: 400px;
 }
 .search-box {
     background-color: white;
@@ -52,7 +71,16 @@ body{
 input:focus{
     outline: none;
 }
-
+.splash-nav > p{
+    position: absolute;
+    left: 17%;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    background: linear-gradient(to left, #fdbe84, #fc9333, #fb730a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .search-box > i{
     font-size: 20px;
     padding: 0 10px;
@@ -74,16 +102,7 @@ input:focus{
     background: none;
     border: none;
 }
-.splash-nav > p{
-    position: absolute;
-    left: 20%;
-    font-size: 40px;
-    font-weight: bolder;
-    font-style: italic;
-    background: linear-gradient(to left, #fdbe84, #fc9333, #fb730a);
-    /* -webkit-background-clip: text; */
-    -webkit-text-fill-color: transparent;
-}
+
 .splash-nav img{
     position: absolute;
     left: 20px;
@@ -96,7 +115,7 @@ input:focus{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 8% ;
+    right: 9% ;
     font-size: 30px;
 }
 .splash-nav .fa-user:hover{
@@ -159,7 +178,29 @@ input:focus{
     padding: 15px;
     color: white;
 }
-
+.t-acct{
+    display: block;
+}
+#acct{
+    position: absolute;
+    display: block ;
+    /* width: 5%; */
+    right: 1.5%;
+    bottom: 15%;
+    box-shadow: 2px 2px 2px 2px #aaa;
+    display: none;
+}
+#acct button{
+    padding: 5px;
+    margin: 5px 7px;
+    background: none;
+    border: none;
+    /* border: 1px solid #fb730a; */
+    cursor: pointer;
+}
+#acct button > .account:hover{
+    background-color: #fc9333;
+}
 
 h1 {
     position: relative;
@@ -240,16 +281,17 @@ h2{
 
 /* Footer */
 footer {
-    position: relative;
+    position: absolute;
     bottom: 0;
     background: white;
     border: 2px solid black;
     border-bottom: 0;
     width: 85%;
-    height: 250px;
+    height: 200px;
     padding: 24px 24px 16px;
     margin-left: 7%;
     border-radius: 10px 10px 0 0;
+    top: 365%;
     /* box-shadow: 10px 10px 10 10px black; */
 }
 .footer-social-icons{
@@ -277,6 +319,7 @@ footer {
 }
 footer ul li{
     list-style: none;
+    font-size: 14px;
 }
 footer ul li a{
     text-decoration: none;
@@ -294,7 +337,7 @@ ul li{
 }
 footer span{
     color: #fb730a;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
     display: inline-block;
@@ -310,7 +353,7 @@ footer .copyright{
     top: 10%;
     right: 10%;
     width: 6%;
-    font-size: small;
+    font-size: 10px;
     padding: 10px;
     background-color: #fdbe84;
     border-radius: 5px;
@@ -320,8 +363,8 @@ footer button{
     top: 65%;
     right: 10%;
     width: 7%;
-    line-height: 15px;
-    font-size: smaller;
+    line-height: 12px;
+    font-size: 10px;
     padding: 5px 8px;
     background-color: #fdbe84;
     border: none;
