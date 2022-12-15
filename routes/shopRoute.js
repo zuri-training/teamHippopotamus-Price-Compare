@@ -16,15 +16,18 @@ router.get("/authhome", isAuth, productCtrl.getAuthHomePage);
 // category page router
 router.get("/categories", isAuth, productCtrl.getCategory);
 
-// account page router
-router.get("/accounts", isAuth, productCtrl.getAccount);
-
 // terms page router
 router.get("/terms", productCtrl.getTerms);
 
-// router.post('/register', productCtrl.postSignUp)
+router.get('/wishlist', isAuth, productCtrl.getWishList)
 
 // Contact page router
 router.get("/contact", productCtrl.postContact);
+
+router.get("/search", productCtrl.getSearch);
+
+router.get("/top-products", isAuth, productCtrl.getTopProdutcs);
+
+router.get("/cart", isAuth, productCtrl.getCart);
 
 module.exports = router;

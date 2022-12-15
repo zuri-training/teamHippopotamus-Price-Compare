@@ -96,3 +96,7 @@ exports.postLogout = (req, res, next) => {
     res.redirect("/");
   });
 };
+
+exports.getUser = (req, res, next) => {
+  res.status(200).render("account", { pageTitle: "My Profile" });
+}

@@ -24,10 +24,22 @@ exports.getTerms = (req, res, next) => {
   res.status(200).render("terms", { pageTitle: "Terms Of Use" });
 };
 
-exports.getAccount = (req, res, next) => {
-  res.sendFile(path.join(__dirname, "../", "views", "accounts.html"));
-};
-
 exports.postContact = (req, res, next) => {
   res.status(200).render("contact", { pageTitle: "Contact Us Page" });
+};
+
+exports.getWishList = (req, res, next) => {
+  res.status(200).render("wishlist", { pageTitle: "WishList" });
+};
+
+exports.getSearch = (req, res, next) => {
+  res.status(200).render("search", { pageTitle: "Search" });
+};
+
+exports.getTopProdutcs = (req, res, next) => {
+  res.status(200).render("top-products", { pageTitle: "Top Products" });
+};
+
+exports.getCart = (req, res, next) => {
+  res.status(200).render("cart", { pageTitle: "My Cart" });
 };
