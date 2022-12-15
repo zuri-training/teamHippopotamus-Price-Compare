@@ -31,17 +31,16 @@
             />
             <button><i class="fa fa-search" aria-hidden="true"></i></button>
           </div>
-          
+
           <button>
             <% if (!isAuthenticated) { %>
-              <a href="/login"><i class="fa fa-user"></i></a>
+            <a href="/login"><i class="fa fa-user"></i></a>
             <% } else { %>
-              <form action="/logout" method="post">
-                <button type="submit">Logout</button>
-              </form>
+            <form action="/logout" method="post">
+              <button type="submit">Logout</button>
+            </form>
             <% } %>
           </button>
-          
         </div>
         <!-- <div class="splash-nav">
           <img
@@ -76,14 +75,16 @@
             <li><a class="btn" href="#">Deals </a></li>
             <li><a class="btn" href="#">Stores</a></li>
             <li><a class="btn" href="/categories">Categories</a></li>
-            <li><a class="btn" href="#">Wishlist</a></li>
-            <li><a class="btn" href="/views/contact.html">Contact us</a></li>
+            <li><a class="btn" href="/wishlist">Wishlist</a></li>
+            <li><a class="btn" href="/contact">Contact us</a></li>
           </ul>
         </div>
 
         <div>
           <button class="cart">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <a href="/cart"
+              ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+            ></a>
           </button>
         </div>
       </section>
@@ -161,16 +162,19 @@
         </div>
       </div>
 
-             <!--Subscribe-->
-             <div class="subscribe">
-              <div>
-                  <i class="fa fa-envelope-o" aria-hidden="true"> </i>
-                  <p><span> Subscribe to the monthly newsletter </span><br> <br>
-                      Get the latest news and update on Hippocompares. You’ll be glad you did
-                      <button>Subscribe</button>
-                  </p>
-              </div>
-          </div>
+      <!--Subscribe-->
+      <div class="subscribe">
+        <div>
+          <i class="fa fa-envelope-o" aria-hidden="true"> </i>
+          <p>
+            <span> Subscribe to the monthly newsletter </span><br />
+            <br />
+            Get the latest news and update on Hippocompares. You’ll be glad you
+            did
+            <button>Subscribe</button>
+          </p>
+        </div>
+      </div>
       <!-- Footer -->
       <footer>
         <div class="footer-social-icons" id="footer">

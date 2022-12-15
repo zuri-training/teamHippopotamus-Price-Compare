@@ -31,3 +31,11 @@ exports.getAccount = (req, res, next) => {
 exports.postContact = (req, res, next) => {
   res.status(200).render("contact", { pageTitle: "Contact Us Page" });
 };
+
+exports.getWishList = (req, res, next) => {
+  res.status(200).render("wishlist", { pageTitle: "Wishlist" });
+};
+
+exports.getCart = (req, res, next) => {
+  res.status(200).render("cart", { pageTitle: "My Cart" });
+};

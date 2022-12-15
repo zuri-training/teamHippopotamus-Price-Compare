@@ -22,7 +22,9 @@ router.get("/accounts", isAuth, productCtrl.getAccount);
 // terms page router
 router.get("/terms", productCtrl.getTerms);
 
-// router.post('/register', productCtrl.postSignUp)
+router.get('/wishlist', isAuth, productCtrl.getWishList)
+
+router.get('/cart', isAuth, productCtrl.getCart)
 
 // Contact page router
 router.get("/contact", productCtrl.postContact);
