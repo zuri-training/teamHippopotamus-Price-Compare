@@ -16,31 +16,39 @@
     <section>
 
         <div class="splash-nav">
-            <img src="/logo/hippo-compares.svg" alt="logo" aria-hidden="true" style="height: 60px;
-            width: 120px;">
+            <img src="/logo/hippo-compares.svg" alt="logo" aria-hidden="true" style="height: 60px; width: 120px" />
             <p>Hippo Compares</p>
             <div class="search-box">
-                <input type="search" name="search" id="search" placeholder="Search for products and deals">
-                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                <input type="search" name="search" id="search" placeholder="Search for products and deals" />
+                <button onclick="window.location='/views/search.html'"><i class="fa fa-search" aria-hidden="true"></i></button>
             </div>
+            <div class="t-acct">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-user"></i></a>
 
-            <button><i class="fa fa-user"></i></button>
-
+                <div id="acct">
+                    <button type="submit" class="account"
+                        onclick="window.location='/views/accounts.html'">Account</button>
+                        <hr style="height: 2px; background-color: #fb730a;">
+                    <form action="/logout" method="post">
+                        <button type="submit" id="logout">Logout</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
         <div class="nav-select" id="navSelect">
             <ul>
-                <li><a class="btn" href="#">Home
+                <li><a class="btn" href="/views/htmlFiles/Homepage.html">Home
                     </a></li>
-                <li><a class="btn" href="#">Deals </a></li>
+                <li><a class="btn" href="/views/top-products.html">Deals </a></li>
                 <li><a class="btn" href="#">Stores</a></li>
-                <li><a class="btn active" href="#">Categories</a></li>
-                <li><a class="btn" href="#">Wishlist</a></li>
-                <li><a class="btn" href="/views/contact.html">Contact us</a></li>
+                <li><a class="btn active" href="/views/htmlFiles/category.html">Categories</a></li>
+                <li><a class="btn" href="/views/wishlist.html">Wishlist</a></li>
+                <li><a class="btn" href="/views/htmlFiles/contact.html">Contact us</a></li>
             </ul>
         </div>
 
-        <div><button class="cart"><i class=" fa fa-shopping-cart" aria-hidden="true"></i></button></div>
+        <div><button onclick="window.location='/views/cart.html'" class="cart"><i class=" fa fa-shopping-cart" aria-hidden="true"></i></button></div>
 
     </section>
 
@@ -105,7 +113,7 @@
                 <li><a href="">Cookies policy</a></li>
                 <li><a href="">Privacy policy</a></li>
                 <li><a href="">Connect</a></li>
-                <li><a href="/views/terms.html">Terms</a></li>
+                <li><a href="/views/htmlFiles/terms.html">Terms</a></li>
             </ul>
         </div>
         <div class="footer-catalog">
@@ -148,6 +156,16 @@
                 current[0].className = current[0].className.replace(" active", "");
                 this.className += " active";
             });
+        };
+
+        function myFunction() {
+            var x =
+                document.getElementById('acct');
+            if (x.style.display === 'block') {
+                x.style.display = 'none'
+            } else {
+                x.style.display = 'block';
+            }
         }
     </script>
 </body>

@@ -111,7 +111,7 @@ input:focus{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 8% ;
+    right: 9% ;
     font-size: 30px;
 }
 .splash-nav .fa-user:hover{
@@ -174,7 +174,29 @@ input:focus{
     padding: 15px;
     color: white;
 }
-
+.t-acct{
+    display: block;
+}
+#acct{
+    position: absolute;
+    display: block ;
+    /* width: 5%; */
+    right: 1.5%;
+    bottom: 15%;
+    box-shadow: 2px 2px 2px 2px #aaa;
+    display: none;
+}
+#acct button{
+    padding: 5px;
+    margin: 5px 7px;
+    background: none;
+    border: none;
+    /* border: 1px solid #fb730a; */
+    cursor: pointer;
+}
+#acct button > .account:hover{
+    background-color: #fc9333;
+}
 .grid-prod{
     /* position: relative; */
     margin-top: 5%;
@@ -192,17 +214,17 @@ input:focus{
 
 /* Footer */
 footer {
-    position: relative;
+    position: absolute;
     bottom: 0;
-    margin-top: 3%;
     background: white;
     border: 2px solid black;
     border-bottom: 0;
     width: 85%;
-    height: 250px;
+    height: 200px;
     padding: 24px 24px 16px;
     margin-left: 7%;
     border-radius: 10px 10px 0 0;
+    top: 300%;
     /* box-shadow: 10px 10px 10 10px black; */
 }
 .footer-social-icons{
@@ -230,6 +252,7 @@ footer {
 }
 footer ul li{
     list-style: none;
+    font-size: 14px;
 }
 footer ul li a{
     text-decoration: none;
@@ -247,7 +270,7 @@ ul li{
 }
 footer span{
     color: #fb730a;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
     display: inline-block;
@@ -263,7 +286,7 @@ footer .copyright{
     top: 10%;
     right: 10%;
     width: 6%;
-    font-size: small;
+    font-size: 10px;
     padding: 10px;
     background-color: #fdbe84;
     border-radius: 5px;
@@ -273,8 +296,8 @@ footer button{
     top: 65%;
     right: 10%;
     width: 7%;
-    line-height: 15px;
-    font-size: smaller;
+    line-height: 12px;
+    font-size: 10px;
     padding: 5px 8px;
     background-color: #fdbe84;
     border: none;

@@ -113,7 +113,7 @@ input:focus{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 7% ;
+    right: 9% ;
     font-size: 30px;
 }
 .splash-nav .fa-user:hover{
@@ -175,6 +175,29 @@ input:focus{
     background-color: #fb730a;
     padding: 15px;
     color: white;
+}
+.t-acct{
+    display: block;
+}
+#acct{
+    position: absolute;
+    display: block ;
+    /* width: 5%; */
+    right: 1.5%;
+    bottom: 15%;
+    box-shadow: 2px 2px 2px 2px #aaa;
+    display: none;
+}
+#acct button{
+    padding: 5px;
+    margin: 5px 7px;
+    background: none;
+    border: none;
+    /* border: 1px solid #fb730a; */
+    cursor: pointer;
+}
+#acct button > .account:hover{
+    background-color: #fc9333;
 }
 /* Categories Section */
 .sections-grid-container {
