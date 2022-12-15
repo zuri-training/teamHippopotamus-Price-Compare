@@ -8,10 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/Homepage.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
@@ -23,7 +19,7 @@
       <section>
         <div class="splash-nav">
           <img
-            src="hippo-compares.svg"
+            src="/hippo-compares.svg"
             alt="logo"
             aria-hidden="true"
             style="height: 60px; width: 120px"
@@ -36,27 +32,44 @@
               id="search"
               placeholder="Search for products and deals"
             />
-            <button><i class="fa fa-search" aria-hidden="true"></i></button>
+            <button onclick="window.location='/search'">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
           </div>
+          <div class="t-acct">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+              ><i class="fa fa-user"></i
+            ></a>
 
-          <button>
-            <a href="/login"><i class="fa fa-user"></i></a>
-          </button>
+            <div id="acct">
+              <button
+                type="submit"
+                class="account"
+                onclick="window.location='/account'"
+              >
+                Account
+              </button>
+              <hr style="height: 2px; background-color: #fb730a" />
+              <form action="/logout" method="post">
+                <button type="submit" id="logout">Logout</button>
+              </form>
+            </div>
+          </div>
         </div>
 
         <div class="nav-select" id="navSelect">
           <ul>
             <li><a class="btn active" href="/home">Home </a></li>
-            <li><a class="btn" href="#">Deals </a></li>
+            <li><a class="btn" href="/top-products">Deals </a></li>
             <li><a class="btn" href="#">Stores</a></li>
             <li><a class="btn" href="/categories">Categories</a></li>
-            <li><a class="btn" href="#">Wishlist</a></li>
+            <li><a class="btn " href="/wishlist">Wishlist</a></li>
             <li><a class="btn" href="/contact">Contact us</a></li>
           </ul>
         </div>
 
         <div>
-          <button class="cart">
+          <button onclick="window.location='/cart'" class="cart">
             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
           </button>
         </div>
