@@ -30,4 +30,6 @@ router.get("/top-products", isAuth, productCtrl.getTopProdutcs);
 
 router.get("/cart", isAuth, productCtrl.getCart);
 
+router.get("/select-product", productCtrl.getSelectProduct);
+
 module.exports = router;

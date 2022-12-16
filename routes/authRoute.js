@@ -21,4 +21,6 @@ router.post('/logout', authCtrl.postLogout)
 
 router.get('/account', isAuth, authCtrl.getUser)
 
+router.get('/forgotPassword', authCtrl.getForgotPassword)
+
 module.exports = router
