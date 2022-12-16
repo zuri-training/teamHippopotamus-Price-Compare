@@ -43,3 +43,7 @@ exports.getTopProdutcs = (req, res, next) => {
 exports.getCart = (req, res, next) => {
   res.status(200).render("cart", { pageTitle: "My Cart" });
 };
+
+exports.getSelectProduct = (req, res, next) => {
+  res.status(200).render("selectProduct", { pageTitle: "Select Product" });
+};

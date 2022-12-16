@@ -100,3 +100,7 @@ exports.postLogout = (req, res, next) => {
 exports.getUser = (req, res, next) => {
   res.status(200).render("account", { pageTitle: "My Profile" });
 }
+
+exports.getForgotPassword = (req, res, next) => {
+  res.status(200).render("forgotPassword", { pageTitle: "Forgot Password" });
+}
