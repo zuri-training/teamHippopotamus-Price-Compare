@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/views/styles/selectProduct.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--Header-->
+        <header>
+            <!-- Search and Nav-bar -->
+            <section>
+
+                <div class="splash-nav">
+                    <img src="/logo/hippo-compares.svg" alt="logo" aria-hidden="true" style="height: 60px; width: 120px" />
+                    <p>Hippo Compares</p>
+                    <div class="search-box">
+                        <input type="search" name="search" id="search" placeholder="Search for products and deals" />
+                        <button onclick="window.location='/views/search.html'"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="t-acct">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-user"></i></a>
+        
+                        <div id="acct">
+                            <button type="submit" class="account"
+                                onclick="window.location='/views/accounts.html'">Account</button>
+                                <hr style="height: 2px; background-color: #fb730a;">
+                            <form action="/logout" method="post">
+                                <button type="submit" id="logout">Logout</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="nav-select" id="navSelect">
+                    <ul>
+                        <li><a class="btn" href="/views/htmlFiles/Homepage.html">Home
+                            </a></li>
+                        <li><a class="btn" href="/views/top-products.html">Deals </a></li>
+                        <li><a class="btn" href="#">Stores</a></li>
+                        <li><a class="btn" href="/views/htmlFiles/category.html">Categories</a></li>
+                        <li><a class="btn" href="/views/wishlist.html">Wishlist</a></li>
+                        <li><a class="btn active" href="/views/htmlFiles/contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+        
+                <div><button onclick="window.location='/views/cart.html'" class="cart"><i class=" fa fa-shopping-cart" aria-hidden="true"></i></button></div>
+        
+            </section>
+            
+        </header>
+
+        <!--Sample Product-->
+        <section class="sample-product">
+            <div class="sample-img1"><img src="/views/images/1.png" alt="sample product"></div>
+            <div class="sample-img2"><img src="/views/images/2.png" alt="sample product"></div>
+            <div class="sample-img3"><img src="/views/images/3.png" alt="sample product"></div>
+            <div class="sample-img4"><img src="/views/images/4.png" alt="sample product"></div>
+            <p class="sample-product-text">Sample Product 1</p>
+            <p class="sample-product-amount">₦ 2,500.00</p>
+            <div class="sample-img5"><img src="/views/images/5.png" alt="star"></div>
+            <div class="sample-img6"><img src="/views/images/5.png" alt="star"></div>
+            <div class="sample-img7"><img src="/views/images/5.png" alt="star"></div>
+            <div class="sample-img8"><img src="/views/images/6.png" alt="star"></div>
+            <div class="sample-img9"><img src="/views/images/6.png" alt="star"></div>
+            <div class="sample-img10"><img src="/views/images/Ellipse 1.png" alt="star"></div>
+            <div class="sample-img11"><img src="/views/images/Ellipse 2.png" alt="star"></div>
+            <div class="sample-img12"><img src="/views/images/Ellipse 1.png" alt="star"></div>
+            <div class="sample-img13"><img src="/views/images/Ellipse 2.png" alt="star"></div>
+            <p class="sample-product-description">Hippo_compares online shop 2022 new design <br> Luxury rhinestones women hand bag Evening <br> Bags for Party Wedding
+                <br>For product pricing, customization, or other <br> inquiries:</p>
+            <button class="button1">Contact supplier</button>
+            <button class="button2">Chat now</button>
+        </section>
+        <section class="Compare-price">
+            <p class="Compare-price-text">Compare price in store</p>
+            <div class="compare-grid">
+                <div class="grid-item grid-item-1">
+                    <p class="compare-text">Ebeano</p>
+                    <p class="compare-amount">₦ 2,500.00</p>
+                    <p class="left-in-stock">10 left in Stock</p>
+                    <button class="button3">View in Store</button>
+                </div>
+                <div class="grid-item grid-item-2">
+                    <p class="compare-text">Spar</p>
+                    <p class="compare-amount">₦ 2,550.00</p>
+                    <p class="left-in-stock">8 left in Stock</p>
+                    <button class="button3">View in Store</button>
+                </div>
+                <div class="grid-item grid-item-3">
+                    <p class="compare-text">Shoprite</p>
+                    <p class="compare-amount">₦ 2,650.00</p>
+                    <p class="left-in-stock">2 left in Stock</p>
+                    <button class="button3">View in Store</button>
+                </div>
+                <div class="grid-item grid-item-4">
+                    <p class="compare-text">Jumia</p>
+                    <p class="compare-amount">₦ 2,500.00</p>
+                    <p class="left-in-stock">Out of Stock</p>
+                    <button class="button3">View in Store</button>
+                </div>
+            </div>
+        </section>
+
+        <!--Leave a comment-->
+        <section class="comment-section">
+            <div id="form">
+                <form class="form">
+                    <p class="title">Leave a Comment</p>
+                    <textarea type="text" name="text" placeholder="Drop comment here"></textarea> 
+                    <p class="title title1">Name</p>
+                    <input type="text" placeholder="ZURIHippoptamus" class="input input1">
+                    <p class="title title2">Email</p>                      
+                    <input type="email" placeholder="name@example.com" class="input input2">                      
+                </form>
+                <button type="button" class="button4" onclick="">SUBMIT</button>
+            </div> 
+        </section>
+
+        <!--Review-->
+        <section class="review">
+            <p class="review1">Review</p>
+            <div class="review-grid">
+                <div class="review-item item-1">
+                    <div class="p1"><img src="/views/images/Ellipse 3.png" alt=""></div>
+                    <div class="p2"><img src="/views/images/Ellipse 4.png" alt=""></div>
+                    <p class="review-p1">G.I Joe</p>
+                    <p class="review-p2">06 Dec / 12:44</p>
+                    <div class="review-img1"><img src="/views/images/5.png" alt="star"></div>
+                    <div class="review-img2"><img src="/views/images/5.png" alt="star"></div>
+                    <div class="review-img3"><img src="/views/images/5.png" alt="star"></div>
+                    <div class="review-img4"><img src="/views/images/6.png" alt="star"></div>
+                    <div class="review-img5"><img src="/views/images/6.png" alt="star"></div>
+                    <p class="review-p3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+                </div>
+                <div class="review-item item-2">
+                    <div class="p1"><img src="/views/images/Ellipse 3.png" alt=""></div>
+                    <div class="p2"><img src="/views/images/Ellipse 4.png" alt=""></div>
+                    <p class="review-p1">G.I Jane</p>
+                    <p class="review-p2">07 Dec / 06:44</p>
+                    <div class="review-img1"><img src="/views/images/5.png" alt="star"></div>
+                    <div class="review-img2"><img src="/views/images/5.png" alt="star"></div>
+                    <div class="review-img3"><img src="/views/images/5.png" alt="star"></div>
+                    <div class="review-img4"><img src="/views/images/6.png" alt="star"></div>
+                    <div class="review-img5"><img src="/views/images/6.png" alt="star"></div>
+                    <p class="review-p3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slider-grid">
+                    <div class="slider-item"><img src="/views/images/Icons1-1.png
+                        " alt="" class="Icon1"></div>
+                    <div class="slider-item"></div>
+                    <div class="slider-item"></div>
+                    <div class="slider-item"></div>
+                    <div class="slider-item"></div>
+                    <div class="slider-item"></div>
+                    <div class="slider-item"><img src="/views/images/Icons2-2.png
+                        " alt="" class="Icon1"></div>
+                </div>
+            </div>
+        </section>
+        <section class="sproducts">
+            <div class="sproducts-grid">
+                <div class="sproducts-item"><img src="/views/images/7.png" alt=""><p class="spt">Sample Product 39</p></div>
+                <div class="sproducts-item"><img src="/views/images/8.png" alt=""><p class="spt">Sample Product 39</p></div>
+                <div class="sproducts-item"><img src="/views/images/9.png" alt=""><p class="spt">Sample Product 39</p></div>
+                <div class="sproducts-item"><img src="/views/images/10.png" alt=""><p class="spt">Sample Product 39</p></div>
+                <div class="sproducts-item"><img src="/views/images/11.png" alt=""><p class="spt">Sample Product 39</p></div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="footer-social-icons" id="footer">
+                <ul>
+                    <li>
+                        <i class="fa fa-facebook-official" aria-hidden="true" style="color: blue"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-linkedin-square" aria-hidden="true" style="color: blue"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-twitter" aria-hidden="true" style="color: blue"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-youtube-play" aria-hidden="true" style="color: red"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-instagram" aria-hidden="true" style="color: red"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-about">
+                <ul>
+                    <li><span>About</span></li>
+                    <li><a href="">About HippoCompares</a></li>
+                    <li><a href="">Cookies policy</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">Connect</a></li>
+                    <li><a href="/views/htmlFiles/terms.html">Terms</a></li>
+                </ul>
+            </div>
+            <div class="footer-catalog">
+                <ul>
+                    <li><span>Catalog</span></li>
+                    <li><a href="">Televisions</a></li>
+                    <li><a href="">Cell phones</a></li>
+                    <li><a href="">Brands</a></li>
+                    <li><a href="">Digital Cameras</a></li>
+                    <li><a href="">Tablets</a></li>
+                    <li><a href="">Wears</a></li>
+                </ul>
+            </div>
+            <div class="footer-learn">
+                <ul>
+                    <li><span>Learn More</span></li>
+                    <li><a href="">Browser Extension</a></li>
+                    <li><a href="">Enterprise</a></li>
+                    <li><a href="">Data API</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+            </div>
+            <div class="copyright">&copy;2022 Hippocompares</div>
+
+            <div class="footer-contact-us">
+                Contact Us Hippocompares 90 Taison St. Maitama Zone 2, Abuja P.M.B 406
+                12345463762
+            </div>
+
+            <button>Comments and Suggestions</button>
+        </footer>
+            <script>
+        var btnContainer = document.getElementById("navSelect");
+        var btns = btnContainer.getElementsByClassName("btn");
+
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        };
+
+        function myFunction() {
+            var x =
+                document.getElementById('acct');
+            if (x.style.display === 'block') {
+                x.style.display = 'none'
+            } else {
+                x.style.display = 'block';
+            }
+        }
+    </script>
+    </body>
+</html>
