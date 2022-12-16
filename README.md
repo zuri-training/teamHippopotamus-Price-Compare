@@ -32,7 +32,7 @@ If you do not have NPM you can download it [here](https://www.npmjs.com/package/
 # About
 
 Price-compare uses a webscraping script that traverses through the URLs of the Leading  Online Shops stored in the database. It then scrapes the prices from the website pages and updates the database with the latest prices. 
-Checkout live link [here](hippocompares.onrender.com)
+Checkout live link [here](https://www.hippocompares.onrender.com)
 
 # Features
 
